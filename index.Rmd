@@ -1,9 +1,14 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAMES HERE"
+title: "Research on Fetal Deaths"
+author: "Jiayi Yuan & Yayun Luo"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
 # Introduction
+
+```{r}
+#install.packages("bookdown")
+browseURL("docs/index.html")
+```
 
