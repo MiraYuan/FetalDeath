@@ -1,0 +1,494 @@
+"Notes"	"Year"	"Year Code"	"Mother's Bridged Race"	"Mother's Bridged Race Code"	"Age of Mother 9"	"Age of Mother 9 Code"	Births
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	121
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	8956
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	16831
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12425
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7079
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3279
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	712
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	39
+	"2007"	"2007"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	1
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	86
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	7822
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	31968
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	71545
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	87147
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	46410
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	8869
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	586
+	"2007"	"2007"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	55
+	"2007"	"2007"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	2445
+	"2007"	"2007"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	113561
+	"2007"	"2007"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	215052
+	"2007"	"2007"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	170270
+	"2007"	"2007"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	105466
+	"2007"	"2007"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	54567
+	"2007"	"2007"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	13372
+	"2007"	"2007"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	877
+	"2007"	"2007"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	66
+	"2007"	"2007"	"White"	"2106-3"	"Under 15 years"	"15"	3543
+	"2007"	"2007"	"White"	"2106-3"	"15-19 years"	"15-19"	314560
+	"2007"	"2007"	"White"	"2106-3"	"20-24 years"	"20-24"	818503
+	"2007"	"2007"	"White"	"2106-3"	"25-29 years"	"25-29"	954168
+	"2007"	"2007"	"White"	"2106-3"	"30-34 years"	"30-34"	762239
+	"2007"	"2007"	"White"	"2106-3"	"35-39 years"	"35-39"	395658
+	"2007"	"2007"	"White"	"2106-3"	"40-44 years"	"40-44"	82226
+	"2007"	"2007"	"White"	"2106-3"	"45-49 years"	"45-49"	5337
+	"2007"	"2007"	"White"	"2106-3"	"50 years and over"	"50+"	392
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	126
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	8815
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	16801
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12649
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7166
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3210
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	727
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	40
+	"2008"	"2008"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	3
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	81
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	7537
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	31038
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	71220
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	85538
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	47616
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	9443
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	642
+	"2008"	"2008"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	70
+	"2008"	"2008"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	2245
+	"2008"	"2008"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	112004
+	"2008"	"2008"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	212493
+	"2008"	"2008"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	169068
+	"2008"	"2008"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	106197
+	"2008"	"2008"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	54563
+	"2008"	"2008"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	13349
+	"2008"	"2008"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	829
+	"2008"	"2008"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	61
+	"2008"	"2008"	"White"	"2106-3"	"Under 15 years"	"15"	3312
+	"2008"	"2008"	"White"	"2106-3"	"15-19 years"	"15-19"	306402
+	"2008"	"2008"	"White"	"2106-3"	"20-24 years"	"20-24"	791852
+	"2008"	"2008"	"White"	"2106-3"	"25-29 years"	"25-29"	942837
+	"2008"	"2008"	"White"	"2106-3"	"30-34 years"	"30-34"	757815
+	"2008"	"2008"	"White"	"2106-3"	"35-39 years"	"35-39"	383486
+	"2008"	"2008"	"White"	"2106-3"	"40-44 years"	"40-44"	82454
+	"2008"	"2008"	"White"	"2106-3"	"45-49 years"	"45-49"	5598
+	"2008"	"2008"	"White"	"2106-3"	"50 years and over"	"50+"	407
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	108
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	8315
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	16231
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12634
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7401
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3214
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	723
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	36
+	"2009"	"2009"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	3
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	76
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	7053
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	29436
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	70539
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	85317
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	48100
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	9863
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	644
+	"2009"	"2009"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	61
+	"2009"	"2009"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1823
+	"2009"	"2009"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	105725
+	"2009"	"2009"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	208885
+	"2009"	"2009"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	165737
+	"2009"	"2009"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	107132
+	"2009"	"2009"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	54036
+	"2009"	"2009"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	13337
+	"2009"	"2009"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	882
+	"2009"	"2009"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	61
+	"2009"	"2009"	"White"	"2106-3"	"Under 15 years"	"15"	3022
+	"2009"	"2009"	"White"	"2106-3"	"15-19 years"	"15-19"	288709
+	"2009"	"2009"	"White"	"2106-3"	"20-24 years"	"20-24"	751430
+	"2009"	"2009"	"White"	"2106-3"	"25-29 years"	"25-29"	917877
+	"2009"	"2009"	"White"	"2106-3"	"30-34 years"	"30-34"	755396
+	"2009"	"2009"	"White"	"2106-3"	"35-39 years"	"35-39"	368753
+	"2009"	"2009"	"White"	"2106-3"	"40-44 years"	"40-44"	81904
+	"2009"	"2009"	"White"	"2106-3"	"45-49 years"	"45-49"	5758
+	"2009"	"2009"	"White"	"2106-3"	"50 years and over"	"50+"	444
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	100
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	7408
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	15743
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12225
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7311
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3212
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	723
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	37
+	"2010"	"2010"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	1
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	49
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	6262
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	27733
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	68378
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	85293
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	48089
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	10315
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	695
+	"2010"	"2010"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	72
+	"2010"	"2010"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1656
+	"2010"	"2010"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	94950
+	"2010"	"2010"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	202082
+	"2010"	"2010"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	160007
+	"2010"	"2010"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	109136
+	"2010"	"2010"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	53807
+	"2010"	"2010"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	13741
+	"2010"	"2010"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	965
+	"2010"	"2010"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	81
+	"2010"	"2010"	"White"	"2106-3"	"Under 15 years"	"15"	2692
+	"2010"	"2010"	"White"	"2106-3"	"15-19 years"	"15-19"	259058
+	"2010"	"2010"	"White"	"2106-3"	"20-24 years"	"20-24"	706130
+	"2010"	"2010"	"White"	"2106-3"	"25-29 years"	"25-29"	893103
+	"2010"	"2010"	"White"	"2106-3"	"30-34 years"	"30-34"	760430
+	"2010"	"2010"	"White"	"2106-3"	"35-39 years"	"35-39"	359762
+	"2010"	"2010"	"White"	"2106-3"	"40-44 years"	"40-44"	82266
+	"2010"	"2010"	"White"	"2106-3"	"45-49 years"	"45-49"	5457
+	"2010"	"2010"	"White"	"2106-3"	"50 years and over"	"50+"	417
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	95
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	6802
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	15569
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12477
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7380
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3292
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	772
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	30
+	"2011"	"2011"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	2
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	65
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	5708
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	27783
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	70461
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	88660
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	49474
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	10963
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	712
+	"2011"	"2011"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	89
+	"2011"	"2011"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1475
+	"2011"	"2011"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	85140
+	"2011"	"2011"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	201323
+	"2011"	"2011"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	161100
+	"2011"	"2011"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	113936
+	"2011"	"2011"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	54756
+	"2011"	"2011"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	14101
+	"2011"	"2011"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	972
+	"2011"	"2011"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	98
+	"2011"	"2011"	"White"	"2106-3"	"Under 15 years"	"15"	2339
+	"2011"	"2011"	"White"	"2106-3"	"15-19 years"	"15-19"	232122
+	"2011"	"2011"	"White"	"2106-3"	"20-24 years"	"20-24"	680525
+	"2011"	"2011"	"White"	"2106-3"	"25-29 years"	"25-29"	883545
+	"2011"	"2011"	"White"	"2106-3"	"30-34 years"	"30-34"	776706
+	"2011"	"2011"	"White"	"2106-3"	"35-39 years"	"35-39"	356327
+	"2011"	"2011"	"White"	"2106-3"	"40-44 years"	"40-44"	83084
+	"2011"	"2011"	"White"	"2106-3"	"45-49 years"	"45-49"	5311
+	"2011"	"2011"	"White"	"2106-3"	"50 years and over"	"50+"	396
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	89
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	6476
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	15164
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12294
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	7871
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3356
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	778
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	61
+	"2012"	"2012"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	4
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	62
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	5529
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	28527
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	74211
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	97949
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	53397
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	12195
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	849
+	"2012"	"2012"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	83
+	"2012"	"2012"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1339
+	"2012"	"2012"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	77474
+	"2012"	"2012"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	202527
+	"2012"	"2012"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	163050
+	"2012"	"2012"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	117671
+	"2012"	"2012"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	56381
+	"2012"	"2012"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	14564
+	"2012"	"2012"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1042
+	"2012"	"2012"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	78
+	"2012"	"2012"	"White"	"2106-3"	"Under 15 years"	"15"	2182
+	"2012"	"2012"	"White"	"2106-3"	"15-19 years"	"15-19"	215909
+	"2012"	"2012"	"White"	"2106-3"	"20-24 years"	"20-24"	670593
+	"2012"	"2012"	"White"	"2106-3"	"25-29 years"	"25-29"	874345
+	"2012"	"2012"	"White"	"2106-3"	"30-34 years"	"30-34"	789925
+	"2012"	"2012"	"White"	"2106-3"	"35-39 years"	"35-39"	359184
+	"2012"	"2012"	"White"	"2106-3"	"40-44 years"	"40-44"	82042
+	"2012"	"2012"	"White"	"2106-3"	"45-49 years"	"45-49"	5205
+	"2012"	"2012"	"White"	"2106-3"	"50 years and over"	"50+"	435
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	70
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	5718
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	14970
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12673
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8142
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3591
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	781
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	39
+	"2013"	"2013"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	7
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	58
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	5083
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	27250
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	70886
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	95865
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	52872
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	12648
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	917
+	"2013"	"2013"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	94
+	"2013"	"2013"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1112
+	"2013"	"2013"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	67537
+	"2013"	"2013"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	200706
+	"2013"	"2013"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	167521
+	"2013"	"2013"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	123013
+	"2013"	"2013"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	58647
+	"2013"	"2013"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	15020
+	"2013"	"2013"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1095
+	"2013"	"2013"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	109
+	"2013"	"2013"	"White"	"2106-3"	"Under 15 years"	"15"	1858
+	"2013"	"2013"	"White"	"2106-3"	"15-19 years"	"15-19"	194767
+	"2013"	"2013"	"White"	"2106-3"	"20-24 years"	"20-24"	653819
+	"2013"	"2013"	"White"	"2106-3"	"25-29 years"	"25-29"	869697
+	"2013"	"2013"	"White"	"2106-3"	"30-34 years"	"30-34"	809907
+	"2013"	"2013"	"White"	"2106-3"	"35-39 years"	"35-39"	368763
+	"2013"	"2013"	"White"	"2106-3"	"40-44 years"	"40-44"	81035
+	"2013"	"2013"	"White"	"2106-3"	"45-49 years"	"45-49"	5444
+	"2013"	"2013"	"White"	"2106-3"	"50 years and over"	"50+"	467
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	55
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	5001
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	14099
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12784
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8592
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3576
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	784
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	35
+	"2014"	"2014"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	2
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	40
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	4637
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	27003
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	74950
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	105442
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	56449
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	13157
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	911
+	"2014"	"2014"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	134
+	"2014"	"2014"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	1028
+	"2014"	"2014"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	59951
+	"2014"	"2014"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	197102
+	"2014"	"2014"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	175096
+	"2014"	"2014"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	127645
+	"2014"	"2014"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	63241
+	"2014"	"2014"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	15238
+	"2014"	"2014"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1130
+	"2014"	"2014"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	131
+	"2014"	"2014"	"White"	"2106-3"	"Under 15 years"	"15"	1646
+	"2014"	"2014"	"White"	"2106-3"	"15-19 years"	"15-19"	179489
+	"2014"	"2014"	"White"	"2106-3"	"20-24 years"	"20-24"	644363
+	"2014"	"2014"	"White"	"2106-3"	"25-29 years"	"25-29"	882562
+	"2014"	"2014"	"White"	"2106-3"	"30-34 years"	"30-34"	839379
+	"2014"	"2014"	"White"	"2106-3"	"35-39 years"	"35-39"	385482
+	"2014"	"2014"	"White"	"2106-3"	"40-44 years"	"40-44"	80842
+	"2014"	"2014"	"White"	"2106-3"	"45-49 years"	"45-49"	5624
+	"2014"	"2014"	"White"	"2106-3"	"50 years and over"	"50+"	476
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	53
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	4738
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	13458
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12842
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8506
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3824
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	824
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	51
+	"2015"	"2015"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	3
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	37
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	4297
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	26174
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	73386
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	105490
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	57400
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	13299
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	1067
+	"2015"	"2015"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	114
+	"2015"	"2015"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	898
+	"2015"	"2015"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	54746
+	"2015"	"2015"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	189986
+	"2015"	"2015"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	180147
+	"2015"	"2015"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	130669
+	"2015"	"2015"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	66430
+	"2015"	"2015"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	15860
+	"2015"	"2015"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1195
+	"2015"	"2015"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	148
+	"2015"	"2015"	"White"	"2106-3"	"Under 15 years"	"15"	1512
+	"2015"	"2015"	"White"	"2106-3"	"15-19 years"	"15-19"	165934
+	"2015"	"2015"	"White"	"2106-3"	"20-24 years"	"20-24"	620891
+	"2015"	"2015"	"White"	"2106-3"	"25-29 years"	"25-29"	885936
+	"2015"	"2015"	"White"	"2106-3"	"30-34 years"	"30-34"	850028
+	"2015"	"2015"	"White"	"2106-3"	"35-39 years"	"35-39"	400342
+	"2015"	"2015"	"White"	"2106-3"	"40-44 years"	"40-44"	81865
+	"2015"	"2015"	"White"	"2106-3"	"45-49 years"	"45-49"	5858
+	"2015"	"2015"	"White"	"2106-3"	"50 years and over"	"50+"	489
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	63
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	4383
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	12632
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12967
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8664
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	3993
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	818
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	32
+	"2016"	"2016"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	3
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	45
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	4608
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	27401
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	79969
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	113293
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	61912
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	13810
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	1121
+	"2016"	"2016"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	124
+	"2016"	"2016"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	814
+	"2016"	"2016"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	51869
+	"2016"	"2016"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	181408
+	"2016"	"2016"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	190467
+	"2016"	"2016"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	138447
+	"2016"	"2016"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	72680
+	"2016"	"2016"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	16867
+	"2016"	"2016"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1374
+	"2016"	"2016"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	141
+	"2016"	"2016"	"White"	"2106-3"	"Under 15 years"	"15"	1331
+	"2016"	"2016"	"White"	"2106-3"	"15-19 years"	"15-19"	148949
+	"2016"	"2016"	"White"	"2106-3"	"20-24 years"	"20-24"	582537
+	"2016"	"2016"	"White"	"2106-3"	"25-29 years"	"25-29"	865719
+	"2016"	"2016"	"White"	"2106-3"	"30-34 years"	"30-34"	850638
+	"2016"	"2016"	"White"	"2106-3"	"35-39 years"	"35-39"	408903
+	"2016"	"2016"	"White"	"2106-3"	"40-44 years"	"40-44"	81645
+	"2016"	"2016"	"White"	"2106-3"	"45-49 years"	"45-49"	5730
+	"2016"	"2016"	"White"	"2106-3"	"50 years and over"	"50+"	518
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	51
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	4071
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	11894
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12645
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8385
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	4005
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	814
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	50
+	"2017"	"2017"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	1
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	49
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	4308
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	26542
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	76316
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	111020
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	63937
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	14063
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	1241
+	"2017"	"2017"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	148
+	"2017"	"2017"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	715
+	"2017"	"2017"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	49177
+	"2017"	"2017"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	175034
+	"2017"	"2017"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	195163
+	"2017"	"2017"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	142477
+	"2017"	"2017"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	76161
+	"2017"	"2017"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	17836
+	"2017"	"2017"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1396
+	"2017"	"2017"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	156
+	"2017"	"2017"	"White"	"2106-3"	"Under 15 years"	"15"	1102
+	"2017"	"2017"	"White"	"2106-3"	"15-19 years"	"15-19"	136821
+	"2017"	"2017"	"White"	"2106-3"	"20-24 years"	"20-24"	551310
+	"2017"	"2017"	"White"	"2106-3"	"25-29 years"	"25-29"	839453
+	"2017"	"2017"	"White"	"2106-3"	"30-34 years"	"30-34"	830035
+	"2017"	"2017"	"White"	"2106-3"	"35-39 years"	"35-39"	410693
+	"2017"	"2017"	"White"	"2106-3"	"40-44 years"	"40-44"	82100
+	"2017"	"2017"	"White"	"2106-3"	"45-49 years"	"45-49"	5796
+	"2017"	"2017"	"White"	"2106-3"	"50 years and over"	"50+"	535
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	33
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	3798
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	11347
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12988
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8815
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	4242
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	877
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	40
+	"2018"	"2018"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	5
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	37
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	3257
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	22654
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	69000
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	107679
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	63701
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	13549
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	1255
+	"2018"	"2018"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	170
+	"2018"	"2018"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	640
+	"2018"	"2018"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	44920
+	"2018"	"2018"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	160836
+	"2018"	"2018"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	190293
+	"2018"	"2018"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	140853
+	"2018"	"2018"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	76142
+	"2018"	"2018"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	18170
+	"2018"	"2018"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1504
+	"2018"	"2018"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	194
+	"2018"	"2018"	"White"	"2106-3"	"Under 15 years"	"15"	1026
+	"2018"	"2018"	"White"	"2106-3"	"15-19 years"	"15-19"	127896
+	"2018"	"2018"	"White"	"2106-3"	"20-24 years"	"20-24"	531338
+	"2018"	"2018"	"White"	"2106-3"	"25-29 years"	"25-29"	827210
+	"2018"	"2018"	"White"	"2106-3"	"30-34 years"	"30-34"	833350
+	"2018"	"2018"	"White"	"2106-3"	"35-39 years"	"35-39"	422701
+	"2018"	"2018"	"White"	"2106-3"	"40-44 years"	"40-44"	84785
+	"2018"	"2018"	"White"	"2106-3"	"45-49 years"	"45-49"	5817
+	"2018"	"2018"	"White"	"2106-3"	"50 years and over"	"50+"	590
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	43
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	3706
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	11224
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	12522
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	8963
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	4359
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	886
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	44
+	"2019"	"2019"	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	3
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	26
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	3272
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	21650
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	66409
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	108481
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	65443
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	13946
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	1274
+	"2019"	"2019"	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	201
+	"2019"	"2019"	"Black or African American"	"2054-5"	"Under 15 years"	"15"	658
+	"2019"	"2019"	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	44206
+	"2019"	"2019"	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	156445
+	"2019"	"2019"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	190589
+	"2019"	"2019"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	144439
+	"2019"	"2019"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	77847
+	"2019"	"2019"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	18867
+	"2019"	"2019"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	1388
+	"2019"	"2019"	"Black or African American"	"2054-5"	"50 years and over"	"50+"	203
+	"2019"	"2019"	"White"	"2106-3"	"Under 15 years"	"15"	1060
+	"2019"	"2019"	"White"	"2106-3"	"15-19 years"	"15-19"	120490
+	"2019"	"2019"	"White"	"2106-3"	"20-24 years"	"20-24"	515023
+	"2019"	"2019"	"White"	"2106-3"	"25-29 years"	"25-29"	808577
+	"2019"	"2019"	"White"	"2106-3"	"30-34 years"	"30-34"	827398
+	"2019"	"2019"	"White"	"2106-3"	"35-39 years"	"35-39"	424949
+	"2019"	"2019"	"White"	"2106-3"	"40-44 years"	"40-44"	86453
+	"2019"	"2019"	"White"	"2106-3"	"45-49 years"	"45-49"	5830
+	"2019"	"2019"	"White"	"2106-3"	"50 years and over"	"50+"	666
+"---"
+"Dataset: Natality, 2007-2020"
+"Query Parameters:"
+"Year: 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018; 2019"
+"Group By: Year; Mother's Bridged Race; Age of Mother 9"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Mar 8, 2022 8:58:03 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2020, on CDC"
+"WONDER Online Database, October 2021. Accessed at http://wonder.cdc.gov/natality-current.html on Mar 8, 2022 8:58:03 PM"
+"---"
+Messages:
+"1. Rows with zero Births are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. Each birth record represents one liveborn infant."
+"2. Beginning with 2020, bridged race is no longer included in the national birth file"
