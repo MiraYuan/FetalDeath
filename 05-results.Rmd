@@ -2,7 +2,7 @@
 
 ## Distributions of Fetal Deaths
 ```{r}
- place <- fetal[,5:6]
+place <- fetal[,5:6]
 ```
 
 ## Fetal Deaths By Time
@@ -54,7 +54,6 @@ g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf,
 #          yaxis = list(title = "Number of Total Death"))
   
 ```
-dfdf
 
 ## Remarkable Fetal Characteristics
 
