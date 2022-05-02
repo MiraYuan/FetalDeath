@@ -1,1 +1,70 @@
 # Results
+
+## Distributions of Fetal Deaths
+```{r}
+# place <- fetal[,5:6] %>%
+#   pivot_wider()
+```
+
+## Fetal Deaths By Time
+```{r}
+library(ggplot2)
+library(dplyr)
+library(plotly)
+
+### Total
+g1 <- fetal %>%
+  group_by(Year) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  ggplot(aes(x = Year, y = add)) +
+  geom_line() +
+  geom_point(alpha = 0.5) +
+  geom_point(aes(x = 2007, y = 26593), color = "red") +
+  geom_text(aes(label = add), nudge_x = 0.5, nudge_y = -150, size = 3) +
+  labs(x = "Numbers of Total Fetal Deaths", y = "Year",
+       title = "Fetal Deaths Over Years") +
+  scale_x_continuous(breaks = seq(2005, 2019, 1))
+g1
+
+
+g2 <- fetal %>%
+  group_by(Sex, Year) %>%
+  summarise(add_g = sum(Fetal.Deaths)) %>%
+  ggplot(aes(x = Year, y = add_g, col = Sex)) +
+  geom_line() +
+  geom_point(alpha = 0.5) +
+  labs(x = "Numbers of Fetal Deaths", y = "Year",
+       title = "Fetal Deaths by Different Sexes Over Years") +
+  scale_x_continuous(breaks = seq(2005, 2019, 1))
+
+start = 2007
+end = 2008
+g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf, 
+              fill = "green", alpha = .2) +
+  annotate("text", x = 2008.1, y = 12700 , label = "2007-2008", 
+           color = "black", hjust = 0) +
+  theme_classic()
+
+# fetal %>%
+#   group_by(Year) %>%
+#   summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
+#   plot_ly(x = ~Year, y = ~add, type = "scatter", mode = "lines+markers",
+#           hoverinfo = "text", text = ~add) %>%
+#   layout(title = "Total Fetal Deaths Over Years", 
+#          xaxis = list(title = "Year", breaks = seq(2005, 2019, 1)),
+#          yaxis = list(title = "Number of Total Death"))
+  
+```
+
+## Remarkable Fetal Characteristics
+
+### Most Relevant
+
+### Flow of Change
+
+## Maternal/Paternal Characteristics
+
+### Clevland plot (age vs fetal death, facet by marital status)
+
+
+

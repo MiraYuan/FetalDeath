@@ -1,1 +1,11 @@
 # Data transformation
+```{r}
+library(tidyr)
+fetal <- read.delim("Fetal Deaths, 2005-2019.txt")
+birth <- read.delim("Natality, 2007-2020.txt")
+fetal <- fetal[,c(-1,-3,-5,-7,-9,-11)]
+fetal <- na.omit(fetal)
+birth <- birth[,c(-1,-3,-5,-7)]
+birth <- na.omit(birth)
+fetal$Age.of.Mother.9 <- as.factor(fetal$Age.of.Mother.9)
+```
