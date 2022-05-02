@@ -2,8 +2,7 @@
 
 ## Distributions of Fetal Deaths
 ```{r}
-# place <- fetal[,5:6] %>%
-#   pivot_wider()
+ place <- fetal[,5:6]
 ```
 
 ## Fetal Deaths By Time
