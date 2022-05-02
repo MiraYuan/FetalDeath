@@ -18,3 +18,7 @@ The fetal mortality rate is the measure of poor reproductive health outcomes. It
 We believe that the death of a fetal is not only a sad tragedy for the family, but also has a very negative impact on an Aging American society. Therefore, in this project, we aim to explore the causes of fetal death. We will analyze the distribution of fetal mortality in the United States from the perspective of time and space. We will also examine whether specific characteristics of parents contribute to fetal mortality.
 
 This project is completed by Jiayi Yuan(JY3162) and Yayun Luo(YL4823). The following link contains all the project content: https://github.com/MiraYuan/FetalDeath.
+
+
+
+ehfgegeuyifgeiufgei
