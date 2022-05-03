@@ -1,0 +1,59 @@
+"Notes"	"Mother's Bridged Race"	"Mother's Bridged Race Code"	"Mother's Marital Status"	"Mother's Marital Status Code"	Fetal Deaths
+	"American Indian or Alaska Native"	"1002-5"	"Married"	"1"	685
+	"American Indian or Alaska Native"	"1002-5"	"Unmarried"	"2"	1437
+	"American Indian or Alaska Native"	"1002-5"	"Unknown or not Stated"	"9"	68
+	"American Indian or Alaska Native"	"1002-5"	"Not Reported"	"100"	335
+	"American Indian or Alaska Native"	"1002-5"	"Not Available"	"110"	1678
+"Total"	"American Indian or Alaska Native"	"1002-5"			4203
+	"Asian or Pacific Islander"	"A-PI"	"Married"	"1"	4903
+	"Asian or Pacific Islander"	"A-PI"	"Unmarried"	"2"	1509
+	"Asian or Pacific Islander"	"A-PI"	"Unknown or not Stated"	"9"	311
+	"Asian or Pacific Islander"	"A-PI"	"Not Reported"	"100"	4220
+	"Asian or Pacific Islander"	"A-PI"	"Not Available"	"110"	7761
+"Total"	"Asian or Pacific Islander"	"A-PI"			18704
+	"Black or African American"	"2054-5"	"Married"	"1"	13531
+	"Black or African American"	"2054-5"	"Unmarried"	"2"	38206
+	"Black or African American"	"2054-5"	"Unknown or not Stated"	"9"	2516
+	"Black or African American"	"2054-5"	"Not Reported"	"100"	10030
+	"Black or African American"	"2054-5"	"Not Available"	"110"	40268
+"Total"	"Black or African American"	"2054-5"			104551
+	"White"	"2106-3"	"Married"	"1"	66418
+	"White"	"2106-3"	"Unmarried"	"2"	46446
+	"White"	"2106-3"	"Unknown or not Stated"	"9"	4058
+	"White"	"2106-3"	"Not Reported"	"100"	31208
+	"White"	"2106-3"	"Not Available"	"110"	88642
+"Total"	"White"	"2106-3"			236772
+	"Not Reported"	"100"	"Not Available"	"110"	51
+"Total"	"Not Reported"	"100"			51
+"Total"					364281
+"---"
+"Dataset: Fetal Deaths, 2005-2019"
+"Query Parameters:"
+"Group By: Mother's Bridged Race; Mother's Marital Status"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/fetal-deaths.html for more information."
+"---"
+"Query Date: May 3, 2022 4:33:53 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics (DVS). Fetal Deaths 2005-2019, as compiled"
+"from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program, on CDC WONDER"
+"Online Database. Accessed at http://wonder.cdc.gov/fetal-deaths-current.html on May 3, 2022 4:33:53 PM"
+"---"
+Messages:
+"1. Rows with zero Fetal Deaths are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. Mother's Marital Status is coded to ""Not Reported"" for the following years and reporting areas: California 2005-2013;"
+"Nevada 2005-2009; New York 2005-2013; New York, Upstate 2005-2013; New York City 2005-2013; Texas 2005."
+"2. Mother's Marital Status is not available in all years after 2013. For 2014 and later years, Mother's Marital Status has been"
+"coded to ""Not Available""."
+"3. Mother's Bridged Race is coded to ""Not Reported"" for the following specified years and reporting areas: 2015 - Rhode Island"
+"4. Beginning in 2014, NCHS changed the standard for gestational period from the Last Menstrual Period (LMP) based gestational"
+"age to the Obstetric/clinical Estimate (OE) based gestational age. This change has resulted in a discontinuity in identifying"
+"fetal deaths at 20 weeks or greater for inclusion in this dataset. Refer to the User Guide to the Fetal Death Public Use File:"
+"https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm. and the Measuring Gestational Age in Vital Statistics Data:"
+"Transitioning to the Obstetric Estimate: https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf. report for more information."

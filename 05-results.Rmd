@@ -78,6 +78,9 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
   ylab("# of Fetal Deaths")
 print(g_age)
 ```
+```{r}
+Race_N_Marriage <- read.delim("RaceNMarriage.txt")
+```
 
 
 ### Clevland plot (age vs fetal death, facet by marital status)
