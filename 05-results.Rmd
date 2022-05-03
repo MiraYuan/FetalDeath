@@ -64,7 +64,19 @@ g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf,
 ## Maternal/Paternal Characteristics
 
 ```{r}
-
+library(tidyverse)
+library(ggplot2)
+parentsAge <- read.delim("parentsAge.txt") %>% 
+  dplyr::select(Age.of.Mother.9, Age.of.Father,Fetal.Deaths) %>%
+  filter(Age.of.Father != "" & Age.of.Father != "Unknown or Not Stated" & Age.of.Father != "Not Reported")
+g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
+  geom_col(position = "dodge") +
+  coord_flip() + 
+  facet_wrap(~Age.of.Mother.9) + 
+  ggtitle("Fetal Deaths Faceted by Maternal Age") + 
+  xlab("Paternal Age") +
+  ylab("# of Fetal Deaths")
+print(g_age)
 ```
 
 
