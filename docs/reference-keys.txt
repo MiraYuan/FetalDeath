@@ -1,0 +1,15 @@
+introduction
+data-sources
+dataset-documentation
+data-transformation
+missing-values
+results
+fetal-deaths-by-time
+distributions-of-fetal-deaths
+remarkable-fetal-characteristics
+most-relevant
+flow-of-change
+maternalpaternal-characteristics
+clevland-plot
+interactive-component
+conclusion
