@@ -107,20 +107,24 @@ print(g_race)
 
 
 
+
+
+### Clevland plot
+
 ```{r}
 Race_N_Marriage <- read.delim("RaceNMarriage.txt") %>% 
-  rename('Maternal Race' = Mother.s.Bridged.Race) %>%
+  rename('Maternal_Race' = Mother.s.Bridged.Race) %>%
   rename('Maternal Marital Status' = Mother.s.Marital.Status) %>% 
   na.omit() %>%
-  dplyr::select(`Maternal Race`, `Maternal Marital Status`, Fetal.Deaths) %>%
-  filter(`Maternal Marital Status` == "Married" | `Maternal Marital Status` == "Unmarried")
+  dplyr::select(`Maternal_Race`, `Maternal Marital Status`, Fetal.Deaths) %>%
+  filter(`Maternal Marital Status` == "Married" | `Maternal Marital Status` == "Unmarried") %>%
+  group_by(Maternal_Race,'Maternal Marital Status')
 
-
-
+ggplot(Race_N_Marriage, aes(x = Maternal_Race, y = Fetal.Deaths, color = `Maternal Marital Status`)) +
+  geom_point(size = 3) +
+  coord_flip() +
+#  facet_wrap(~Maternal Marital Status)+
+  ylab("# of Fetal Deaths") +
+  xlab("Maternal Race")
 ```
-
-
-### Clevland plot (age vs fetal death, facet by marital status)
-
-
 
