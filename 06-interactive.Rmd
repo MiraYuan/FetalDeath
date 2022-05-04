@@ -32,8 +32,6 @@ fetal
 ## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
 ```{r}
 library(streamgraph)
- 
-# Create data:
 library(tidyverse)
 
 data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
