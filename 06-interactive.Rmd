@@ -1,3 +1,35 @@
 # Interactive component
-Understand fetal death by region
+
+```{r}
+library(plotly)
+fetal_con_downs_new <- fetal_con_downs %>%
+  group_by(Standard.Residence.States,Downs.Syndrome) %>%
+  summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  filter(Downs.Syndrome=="Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+
+not_include <- state.name[state.name %in% fetal_con_downs_new$State == FALSE]
+bind <- data.frame(State =not_include,
+                   add = rep(NA, length(not_include)))
+fetal_con_downs_new <- rbind(fetal_con_downs_new, bind)
+
+#pivot_wider(names_from = Downs.Syndrome, values_from = Percent.of.Total.Deaths)
+
+## Trace only USA
+g <- list(
+  scope = 'usa',
+  projection = list(type = 'albers usa'),
+  lakecolor = toRGB('white')
+)
+
+percent <- fetal_con_downs_new$add
+  
+plot_geo() %>%
+  add_trace(
+    z = ~percent, text = state.name, span = I(1),
+    locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+  ) %>%
+  layout(geo = g)
+```
 

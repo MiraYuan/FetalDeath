@@ -1,0 +1,325 @@
+"Notes"	"Standard Residence States"	"Standard Residence States Code"	"Anencephalus"	"Anencephalus Code"	"Spina Bifida / Meningocele"	"Spina Bifida / Meningocele Code"	"Omphalocele / Gastroschisis"	"Omphalocele / Gastroschisis Code"	"Cleft Lip / Palate"	"Cleft Lip / Palate Code"	Fetal Deaths	Percent of Total Deaths
+	"Alabama"	"01"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	47	0.01
+	"Alabama"	"01"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	38	0.01
+	"Alabama"	"01"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	18	0.00
+	"Alabama"	"01"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4653	1.28
+	"Alabama"	"01"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	181	0.05
+	"Alabama"	"01"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3198	0.88
+	"Alaska"	"02"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	359	0.10
+	"Alaska"	"02"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	120	0.03
+	"Alaska"	"02"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	374	0.10
+	"Arizona"	"04"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	49	0.01
+	"Arizona"	"04"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	21	0.01
+	"Arizona"	"04"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	19	0.01
+	"Arizona"	"04"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4494	1.23
+	"Arizona"	"04"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	197	0.05
+	"Arizona"	"04"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2942	0.81
+	"Arkansas"	"05"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	17	0.00
+	"Arkansas"	"05"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	17	0.00
+	"Arkansas"	"05"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	24	0.01
+	"Arkansas"	"05"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2370	0.65
+	"Arkansas"	"05"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	16	0.00
+	"Arkansas"	"05"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1489	0.41
+	"California"	"06"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	170	0.05
+	"California"	"06"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	28	0.01
+	"California"	"06"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	60	0.02
+	"California"	"06"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	149	0.04
+	"California"	"06"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	23494	6.45
+	"California"	"06"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	542	0.15
+	"California"	"06"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	14460	3.97
+	"Colorado"	"08"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	34	0.01
+	"Colorado"	"08"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	29	0.01
+	"Colorado"	"08"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	24	0.01
+	"Colorado"	"08"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2725	0.75
+	"Colorado"	"08"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	369	0.10
+	"Colorado"	"08"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2171	0.60
+	"Connecticut"	"09"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	11	0.00
+	"Connecticut"	"09"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	16	0.00
+	"Connecticut"	"09"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	13	0.00
+	"Connecticut"	"09"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1676	0.46
+	"Connecticut"	"09"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	231	0.06
+	"Connecticut"	"09"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	975	0.27
+	"Delaware"	"10"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	587	0.16
+	"Delaware"	"10"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	18	0.00
+	"Delaware"	"10"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	363	0.10
+	"District of Columbia"	"11"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	671	0.18
+	"District of Columbia"	"11"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	66	0.02
+	"District of Columbia"	"11"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	518	0.14
+	"Florida"	"12"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	122	0.03
+	"Florida"	"12"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	32	0.01
+	"Florida"	"12"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	52	0.01
+	"Florida"	"12"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	88	0.02
+	"Florida"	"12"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	13482	3.70
+	"Florida"	"12"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	580	0.16
+	"Florida"	"12"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	9388	2.58
+	"Georgia"	"13"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	46	0.01
+	"Georgia"	"13"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	12	0.00
+	"Georgia"	"13"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	17	0.00
+	"Georgia"	"13"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	38	0.01
+	"Georgia"	"13"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	6170	1.69
+	"Georgia"	"13"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	2646	0.73
+	"Georgia"	"13"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	1265	0.35
+	"Georgia"	"13"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	6251	1.72
+	"Hawaii"	"15"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	1075	0.30
+	"Hawaii"	"15"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	640	0.18
+	"Idaho"	"16"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	10	0.00
+	"Idaho"	"16"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1037	0.28
+	"Idaho"	"16"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	16	0.00
+	"Idaho"	"16"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	695	0.19
+	"Illinois"	"17"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	91	0.02
+	"Illinois"	"17"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	27	0.01
+	"Illinois"	"17"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	56	0.02
+	"Illinois"	"17"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	78	0.02
+	"Illinois"	"17"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	7244	1.99
+	"Illinois"	"17"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	1641	0.45
+	"Illinois"	"17"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	5477	1.50
+	"Indiana"	"18"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	76	0.02
+	"Indiana"	"18"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	15	0.00
+	"Indiana"	"18"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	25	0.01
+	"Indiana"	"18"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	46	0.01
+	"Indiana"	"18"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	3787	1.04
+	"Indiana"	"18"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	513	0.14
+	"Indiana"	"18"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3078	0.84
+	"Iowa"	"19"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	31	0.01
+	"Iowa"	"19"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	14	0.00
+	"Iowa"	"19"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	20	0.01
+	"Iowa"	"19"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	22	0.01
+	"Iowa"	"19"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1736	0.48
+	"Iowa"	"19"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	35	0.01
+	"Iowa"	"19"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1096	0.30
+	"Kansas"	"20"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	31	0.01
+	"Kansas"	"20"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1665	0.46
+	"Kansas"	"20"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1272	0.35
+	"Kentucky"	"21"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	39	0.01
+	"Kentucky"	"21"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	13	0.00
+	"Kentucky"	"21"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	26	0.01
+	"Kentucky"	"21"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2929	0.80
+	"Kentucky"	"21"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	166	0.05
+	"Kentucky"	"21"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2043	0.56
+	"Louisiana"	"22"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	45	0.01
+	"Louisiana"	"22"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	26	0.01
+	"Louisiana"	"22"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	18	0.00
+	"Louisiana"	"22"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2996	0.82
+	"Louisiana"	"22"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	118	0.03
+	"Louisiana"	"22"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2026	0.56
+	"Maine"	"23"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	389	0.11
+	"Maine"	"23"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	151	0.04
+	"Maine"	"23"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	365	0.10
+	"Maryland"	"24"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	41	0.01
+	"Maryland"	"24"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	26	0.01
+	"Maryland"	"24"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	19	0.01
+	"Maryland"	"24"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	38	0.01
+	"Maryland"	"24"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4952	1.36
+	"Maryland"	"24"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	44	0.01
+	"Maryland"	"24"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3111	0.85
+	"Massachusetts"	"25"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	12	0.00
+	"Massachusetts"	"25"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	10	0.00
+	"Massachusetts"	"25"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	14	0.00
+	"Massachusetts"	"25"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2713	0.74
+	"Massachusetts"	"25"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	572	0.16
+	"Massachusetts"	"25"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1929	0.53
+	"Michigan"	"26"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	72	0.02
+	"Michigan"	"26"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	12	0.00
+	"Michigan"	"26"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	32	0.01
+	"Michigan"	"26"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	53	0.01
+	"Michigan"	"26"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	5279	1.45
+	"Michigan"	"26"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	385	0.11
+	"Michigan"	"26"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3714	1.02
+	"Minnesota"	"27"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	59	0.02
+	"Minnesota"	"27"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	17	0.00
+	"Minnesota"	"27"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	31	0.01
+	"Minnesota"	"27"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2605	0.72
+	"Minnesota"	"27"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	505	0.14
+	"Minnesota"	"27"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2294	0.63
+	"Mississippi"	"28"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	27	0.01
+	"Mississippi"	"28"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	17	0.00
+	"Mississippi"	"28"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	14	0.00
+	"Mississippi"	"28"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	3338	0.92
+	"Mississippi"	"28"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	291	0.08
+	"Mississippi"	"28"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2297	0.63
+	"Missouri"	"29"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	42	0.01
+	"Missouri"	"29"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	23	0.01
+	"Missouri"	"29"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	16	0.00
+	"Missouri"	"29"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	3691	1.01
+	"Missouri"	"29"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	113	0.03
+	"Missouri"	"29"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2545	0.70
+	"Montana"	"30"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	453	0.12
+	"Montana"	"30"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	310	0.09
+	"Nebraska"	"31"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	14	0.00
+	"Nebraska"	"31"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	11	0.00
+	"Nebraska"	"31"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1254	0.34
+	"Nebraska"	"31"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	860	0.24
+	"Nevada"	"32"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	25	0.01
+	"Nevada"	"32"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	11	0.00
+	"Nevada"	"32"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	18	0.00
+	"Nevada"	"32"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	15	0.00
+	"Nevada"	"32"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1911	0.52
+	"Nevada"	"32"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	238	0.07
+	"Nevada"	"32"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1433	0.39
+	"New Hampshire"	"33"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	525	0.14
+	"New Hampshire"	"33"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	30	0.01
+	"New Hampshire"	"33"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	341	0.09
+	"New Jersey"	"34"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	42	0.01
+	"New Jersey"	"34"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	21	0.01
+	"New Jersey"	"34"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	36	0.01
+	"New Jersey"	"34"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	45	0.01
+	"New Jersey"	"34"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	5670	1.56
+	"New Jersey"	"34"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	770	0.21
+	"New Jersey"	"34"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	4175	1.15
+	"New Mexico"	"35"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	347	0.10
+	"New Mexico"	"35"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	470	0.13
+	"New Mexico"	"35"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	503	0.14
+	"New York"	"36"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	16	0.00
+	"New York"	"36"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	14	0.00
+	"New York"	"36"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4444	1.22
+	"New York"	"36"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	1972	0.54
+	"New York"	"36"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	"Not Reported"	"100"	11502	3.16
+	"New York"	"36"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	8961	2.46
+	"North Carolina"	"37"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	43	0.01
+	"North Carolina"	"37"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	11	0.00
+	"North Carolina"	"37"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	44	0.01
+	"North Carolina"	"37"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	39	0.01
+	"North Carolina"	"37"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	7117	1.95
+	"North Carolina"	"37"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	49	0.01
+	"North Carolina"	"37"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	4976	1.37
+	"North Dakota"	"38"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	426	0.12
+	"North Dakota"	"38"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	23	0.01
+	"North Dakota"	"38"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	381	0.10
+	"Ohio"	"39"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	105	0.03
+	"Ohio"	"39"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	27	0.01
+	"Ohio"	"39"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	69	0.02
+	"Ohio"	"39"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	72	0.02
+	"Ohio"	"39"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	7148	1.96
+	"Ohio"	"39"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	590	0.16
+	"Ohio"	"39"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	5298	1.45
+	"Oklahoma"	"40"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	36	0.01
+	"Oklahoma"	"40"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	12	0.00
+	"Oklahoma"	"40"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	16	0.00
+	"Oklahoma"	"40"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1412	0.39
+	"Oklahoma"	"40"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	1066	0.29
+	"Oklahoma"	"40"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1712	0.47
+	"Oregon"	"41"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	23	0.01
+	"Oregon"	"41"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	14	0.00
+	"Oregon"	"41"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	14	0.00
+	"Oregon"	"41"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	1968	0.54
+	"Oregon"	"41"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1243	0.34
+	"Pennsylvania"	"42"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	90	0.02
+	"Pennsylvania"	"42"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	42	0.01
+	"Pennsylvania"	"42"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	53	0.01
+	"Pennsylvania"	"42"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	61	0.02
+	"Pennsylvania"	"42"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	7007	1.92
+	"Pennsylvania"	"42"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	1749	0.48
+	"Pennsylvania"	"42"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	5036	1.38
+	"Rhode Island"	"44"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	49	0.01
+	"Rhode Island"	"44"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	523	0.14
+	"Rhode Island"	"44"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	336	0.09
+	"South Carolina"	"45"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	33	0.01
+	"South Carolina"	"45"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	12	0.00
+	"South Carolina"	"45"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	15	0.00
+	"South Carolina"	"45"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	12	0.00
+	"South Carolina"	"45"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4506	1.24
+	"South Carolina"	"45"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	126	0.03
+	"South Carolina"	"45"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2469	0.68
+	"South Dakota"	"46"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	10	0.00
+	"South Dakota"	"46"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	506	0.14
+	"South Dakota"	"46"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	10	0.00
+	"South Dakota"	"46"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	439	0.12
+	"Tennessee"	"47"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	23	0.01
+	"Tennessee"	"47"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	18	0.00
+	"Tennessee"	"47"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	24	0.01
+	"Tennessee"	"47"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	4139	1.14
+	"Tennessee"	"47"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	19	0.01
+	"Tennessee"	"47"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3403	0.93
+	"Texas"	"48"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	257	0.07
+	"Texas"	"48"	"No"	"2"	"Yes"	"1"	"Yes"	"1"	"No"	"2"	18	0.00
+	"Texas"	"48"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	100	0.03
+	"Texas"	"48"	"No"	"2"	"No"	"2"	"Yes"	"1"	"Yes"	"1"	10	0.00
+	"Texas"	"48"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	136	0.04
+	"Texas"	"48"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	186	0.05
+	"Texas"	"48"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	17456	4.79
+	"Texas"	"48"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	15	0.00
+	"Texas"	"48"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	10888	2.99
+	"Utah"	"49"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	37	0.01
+	"Utah"	"49"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	17	0.00
+	"Utah"	"49"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	21	0.01
+	"Utah"	"49"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2403	0.66
+	"Utah"	"49"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1687	0.46
+	"Vermont"	"50"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	209	0.06
+	"Vermont"	"50"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	42	0.01
+	"Vermont"	"50"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	138	0.04
+	"Virginia"	"51"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	25	0.01
+	"Virginia"	"51"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	13	0.00
+	"Virginia"	"51"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	29	0.01
+	"Virginia"	"51"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	26	0.01
+	"Virginia"	"51"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	5781	1.59
+	"Virginia"	"51"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	483	0.13
+	"Virginia"	"51"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	3282	0.90
+	"Washington"	"53"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	73	0.02
+	"Washington"	"53"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	34	0.01
+	"Washington"	"53"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	25	0.01
+	"Washington"	"53"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	50	0.01
+	"Washington"	"53"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	3555	0.98
+	"Washington"	"53"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	855	0.23
+	"Washington"	"53"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	2982	0.82
+	"West Virginia"	"54"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	10	0.00
+	"West Virginia"	"54"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	10	0.00
+	"West Virginia"	"54"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	985	0.27
+	"West Virginia"	"54"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	17	0.00
+	"West Virginia"	"54"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	613	0.17
+	"Wisconsin"	"55"	"Yes"	"1"	"No"	"2"	"No"	"2"	"No"	"2"	50	0.01
+	"Wisconsin"	"55"	"No"	"2"	"Yes"	"1"	"No"	"2"	"No"	"2"	10	0.00
+	"Wisconsin"	"55"	"No"	"2"	"No"	"2"	"Yes"	"1"	"No"	"2"	28	0.01
+	"Wisconsin"	"55"	"No"	"2"	"No"	"2"	"No"	"2"	"Yes"	"1"	32	0.01
+	"Wisconsin"	"55"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	2946	0.81
+	"Wisconsin"	"55"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	"Not classifiable"	"9"	275	0.08
+	"Wisconsin"	"55"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	1982	0.54
+	"Wyoming"	"56"	"No"	"2"	"No"	"2"	"No"	"2"	"No"	"2"	344	0.09
+	"Wyoming"	"56"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	"Not Available"	"110"	241	0.07
+"---"
+"Dataset: Fetal Deaths, 2005-2019"
+"Query Parameters:"
+"Group By: Standard Residence States; Anencephalus; Spina Bifida / Meningocele; Omphalocele / Gastroschisis; Cleft Lip / Palate"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/fetal-deaths.html for more information."
+"---"
+"Query Date: May 4, 2022 11:08:21 AM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics (DVS). Fetal Deaths 2005-2019, as compiled"
+"from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program, on CDC WONDER"
+"Online Database. Accessed at http://wonder.cdc.gov/fetal-deaths-current.html on May 4, 2022 11:08:21 AM"
+"---"
+Messages:
+"1. Rows with suppressed Fetal Deaths are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Caveats:
+"1. 'Suppressed' appears instead of fetal deaths and percent of total values when the death value represents 0-9 sub-national"
+"events. This is because the data do not meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/fetal-deaths.html#Assurance of Confidentiality."
+"2. Please note that the Percent of Total presented here may not be consistent with percentages published by NCHS. NCHS excludes"
+"fetal deaths categorized as ""Unknown"", ""Not Stated"", ""Not on Certificate"", ""Excluded"", and ""Not Reported"" from the"
+"denominator when calculating percentages."
+"3. Anencephalus is coded to ""Not Reported"" for the following years and reporting areas: Georgia 2007; Hawaii 2005-2013; New"
+"Mexico 2005-2009; New York, Upstate 2005-2009; New York City 2005-2010."
+"4. Spina Bifida/Meningocele is coded to ""Not Reported"" for the following years and reporting areas: Georgia 2007; Hawaii"
+"2005-2013; New Mexico 2005-2009; New York, Upstate 2005-2009; New York City 2005-2010."
+"5. Omphalocele/Gastroschisis is coded to ""Not Reported"" for the following years and reporting areas: Georgia 2007; Hawaii"
+"2005-2013; New Mexico 2005-2009; New York, Upstate 2005-2009; New York City 2005-2010."
+"6. Cleft Lip/Palate is coded to ""Not Reported"" for the following years and reporting areas: Georgia 2007; Hawaii 2005-2013;"
+"New Mexico 2005-2009; New York, Upstate 2005-2009; New York City 2005-2010."
+"7. Anencephalus is not available in all years after 2013. For 2014 and later years, Anencephalus has been coded to ""Not"
+"Available""."
+"8. Spina Bifida / Meningocele is not available in all years after 2013. For 2014 and later years, Spina Bifida / Meningocele has"
+"been coded to ""Not Available""."
+"9. Omphalocele / Gastroschisis is not available in all years after 2013. For 2014 and later years, Omphalocele / Gastroschisis"
+"has been coded to ""Not Available""."
+"10. Cleft Lip / Palate is not available in all years after 2013. For 2014 and later years, Cleft Lip / Palate has been coded to"
+"""Not Available""."
+"11. Beginning in 2014, NCHS changed the standard for gestational period from the Last Menstrual Period (LMP) based gestational"
+"age to the Obstetric/clinical Estimate (OE) based gestational age. This change has resulted in a discontinuity in identifying"
+"fetal deaths at 20 weeks or greater for inclusion in this dataset. Refer to the User Guide to the Fetal Death Public Use File:"
+"https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm. and the Measuring Gestational Age in Vital Statistics Data:"
+"Transitioning to the Obstetric Estimate: https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf. report for more information."

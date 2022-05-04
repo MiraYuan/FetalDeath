@@ -38,6 +38,34 @@ birth_state_new <- birth_state[1:663,] %>%
 birth_weight <- read.delim("Natality, 2007-2019 weight.txt") %>%
   dplyr::select(2,4)
 birth_weight <- birth_weight[1:13,]
+
+fetal_con <- read.delim("Fetal Deaths congential.txt") %>%
+  dplyr::select(2,4,6,8,10,12,13)
+fetal_con <- fetal_con[1:276,]
+fetal_con <- fetal_con %>%
+  dplyr::mutate(Anencephalus = ifelse(grepl("Not",Anencephalus, fixed = TRUE), NA_character_,
+                               Anencephalus)) %>%
+  dplyr::mutate(Spina.Bifida...Meningocele = 
+                  ifelse(grepl("Not",Spina.Bifida...Meningocele, fixed = TRUE), NA_character_,
+                         Spina.Bifida...Meningocele)) %>%
+  dplyr::mutate(Omphalocele...Gastroschisis = 
+                  ifelse(grepl("Not",Omphalocele...Gastroschisis, fixed = TRUE), NA_character_,
+                         Omphalocele...Gastroschisis)) %>%
+  dplyr::mutate(Cleft.Lip...Palate = 
+                  ifelse(grepl("Not",Cleft.Lip...Palate, fixed = TRUE), NA_character_,
+                         Cleft.Lip...Palate))
+
+fetal_con_downs <- read.delim("Fetal Deaths congential downs.txt") %>%
+  dplyr::select(2,4,7)
+fetal_con_downs <- fetal_con_downs[1:185,]
+fetal_con_downs <- fetal_con_downs %>%
+  dplyr::mutate(Downs.Syndrome = ifelse(grepl("Not",Downs.Syndrome, fixed = TRUE), 
+                                 NA_character_,Downs.Syndrome)) 
+
+ 
+
+
+
 ```
 
 

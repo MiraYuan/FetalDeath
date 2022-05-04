@@ -12,6 +12,8 @@ site: bookdown::bookdown_site
 browseURL("docs/index.html")
 ```
 
+![](infant.png)
+
 The fetal mortality rate is the measure of poor reproductive health outcomes. It also indicates to some extent a country's medical and health level, economic level and basic implementation level. As the most advanced developed country in the world, the United States is famous for its advanced medical technology and strong economic strength. However, the United States ranks very high in fetal mortality. The fetal mortality rate in the United States is even three times that of some developed countries (such as Japan and Sweden), which shows that fetal mortality is a serious issue that needs to be taken seriously.
 
 
