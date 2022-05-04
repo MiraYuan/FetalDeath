@@ -56,15 +56,11 @@ fetal_con <- fetal_con %>%
                          Cleft.Lip...Palate))
 
 fetal_con_downs <- read.delim("Fetal Deaths congential downs.txt") %>%
-  dplyr::select(2,4,7)
+  dplyr::select(2,4,6,7)
 fetal_con_downs <- fetal_con_downs[1:185,]
 fetal_con_downs <- fetal_con_downs %>%
   dplyr::mutate(Downs.Syndrome = ifelse(grepl("Not",Downs.Syndrome, fixed = TRUE), 
                                  NA_character_,Downs.Syndrome)) 
-
- 
-
-
 
 ```
 
