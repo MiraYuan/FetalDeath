@@ -23,3 +23,25 @@ g_by_year <- dygraph(fetal_by_year) %>%
 g_by_year
 ```
 
+```{r}
+fetal
+
+```
+
+
+## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
+```{r}
+library(streamgraph)
+ 
+# Create data:
+library(tidyverse)
+
+data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
+  summarise(Deaths = sum(Fetal.Deaths))
+ 
+# Stream graph with a legend
+g <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Year") %>%
+  sg_legend(show=TRUE, label="names: ")
+g
+```
+
