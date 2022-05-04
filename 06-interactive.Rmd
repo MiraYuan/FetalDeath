@@ -1,3 +1,25 @@
 # Interactive component
 Understand fetal death by region
 
+## The Total Amount of Fetal Death from 2005 to 2019
+
+```{r}
+library(dygraphs)
+library(xts)          
+library(tidyverse)
+library(lubridate)
+
+#data
+fetal_by_year <- fetal %>% group_by(Year) %>%
+  summarize(`Total Fetal Deaths` = sum(Fetal.Deaths))
+
+#plot
+g_by_year <- dygraph(fetal_by_year) %>%
+  dyOptions(labelsUTC = TRUE, fillGraph=TRUE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
+  dyRoller(rollPeriod = 1) 
+g_by_year
+```
+
