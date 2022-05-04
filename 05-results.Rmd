@@ -79,7 +79,32 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
 print(g_age)
 ```
 ```{r}
-Race_N_Marriage <- read.delim("RaceNMarriage.txt")
+race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
+  filter(Mother.s.Bridged.Race != "Not Reported") %>%
+  group_by(Mother.s.Bridged.Race, Year) %>%
+  summarize(n = n())
+
+library(ggridges)
+g_race <- ggplot(race, aes(x = Year, y = n, fill = Mother.s.Bridged.Race)) +
+  geom_density_ridges() +
+  theme_ridges() + 
+  theme(legend.position = "none") +
+  ggtitle("")
+print(g_race)
+```
+
+
+
+```{r}
+Race_N_Marriage <- read.delim("RaceNMarriage.txt") %>% 
+  rename('Maternal Race' = Mother.s.Bridged.Race) %>%
+  rename('Maternal Marital Status' = Mother.s.Marital.Status) %>% 
+  na.omit() %>%
+  dplyr::select(`Maternal Race`, `Maternal Marital Status`, Fetal.Deaths) %>%
+  filter(`Maternal Marital Status` == "Married" | `Maternal Marital Status` == "Unmarried")
+
+
+
 ```
 
 
