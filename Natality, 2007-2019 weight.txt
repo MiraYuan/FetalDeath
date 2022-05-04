@@ -1,0 +1,39 @@
+"Notes"	"Infant Birth Weight 14"	"Infant Birth Weight 14 Code"	Births
+	"499 grams or less"	"01"	77071
+	"500 - 749 grams"	"02"	130242
+	"750 - 999 grams"	"03"	145396
+	"1000 - 1249 grams"	"04"	172073
+	"1250 - 1499 grams"	"05"	212123
+	"1500 - 1999 grams"	"06"	823387
+	"2000 - 2499 grams"	"07"	2659504
+	"2500 - 2999 grams"	"08"	9596577
+	"3000 - 3499 grams"	"09"	20191813
+	"3500 - 3999 grams"	"10"	13750852
+	"4000 - 4499 grams"	"11"	3483590
+	"4500 - 4999 grams"	"12"	489544
+	"5000 - 8165 grams"	"13"	56634
+	"Unknown or Not Stated"	"14"	50984
+"---"
+"Dataset: Natality, 2007-2020"
+"Query Parameters:"
+"Year: 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018; 2019"
+"Group By: Infant Birth Weight 14"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: May 4, 2022 2:17:01 AM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2020, on CDC"
+"WONDER Online Database, October 2021. Accessed at http://wonder.cdc.gov/natality-current.html on May 4, 2022 2:17:01 AM"
+"---"
+Caveats:
+"1. Each birth record represents one liveborn infant."
+"2. For birth weight data shown in WONDER before May 8, 2015, 21 births that occurred in year 2011 were erroneously reported in"
+"the birth weight category 5000-8165 grams, instead of the ""Not stated"" birth weight category. These 21 births are now reported"
+"in ""Not stated"" birth weight category."

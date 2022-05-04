@@ -1,6 +1,6 @@
 # Results
 
-## Fetal Deaths By Time
+## Fetal Deaths Over Years
 ```{r}
 library(ggplot2)
 library(dplyr)
@@ -8,8 +8,8 @@ library(plotly)
 
 ### Total
 g1 <- fetal %>%
-  group_by(Year) %>%
-  summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::group_by(Year) %>%
+  dplyr::summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
   ggplot(aes(x = Year, y = add_p)) +
   geom_line() +
   geom_point(alpha = 0.5) +
@@ -22,8 +22,8 @@ g1
 
 
 g2 <- fetal %>%
-  group_by(Sex, Year) %>%
-  summarise(add_g = sum(Fetal.Deaths), add_g_p = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::group_by(Sex, Year) %>%
+  dplyr::summarise(add_g = sum(Fetal.Deaths), add_g_p = sum(Percent.of.Total.Deaths)) %>%
   ggplot(aes(x = Year, y = add_g_p, col = Sex)) +
   geom_line() +
   geom_point(alpha = 0.5) +
@@ -61,16 +61,98 @@ g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf,
 #          yaxis = list(title = "Number of Total Death"))
 ```
 
-First of all, let us take a look at how the fetal death rates changed between 2005 and 2019. We can clearly see a decreasing trend since 2007. Since we don’t have data before 2007, even though our graphs show there might be an increasing trend before 2007, we cannot simply make a conclusion. After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death rate had a sharper decrease than male data did. This decreasing trend is a good indicator, showing an improvement in national health. It is also unsurprising: with the development of technology and medical skills, we can now detect any potential factors that lead to fetus deaths more efficiently.
+First of all, let us take a look at how the fetal death rates changed between 2005 and 2019. We can clearly see a decreasing trend since 2007. Since we don’t have data before 2007, even though our graphs show there might be an increasing trend before 2007, we cannot simply make a conclusion. After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death rate had a sharper decrease than male data did. We should notice that our graph shows higher death rates for male fetuses. This is not because male fetuses have a higher possibility of death but because male fetuses have higher birth rates in general. This decreasing trend is a good indicator, showing an improvement in national health. It is also unsurprising: with the development of technology and medical skills, we can now detect any potential factors that lead to fetus deaths more efficiently.
 
+## Geographical Distribution
+```{r}
+library(choroplethr)
+library(choroplethrMaps)
 
-## Distributions of Fetal Deaths
+df_geo <- fetal_2 %>%
+  dplyr::group_by(Standard.Residence.States) %>%
+  dplyr::summarise(death = sum(Fetal.Deaths), death.p = sum(Percent.of.Total.Deaths)) %>%
+  as.data.frame() %>%
+  transmute(region = tolower(`Standard.Residence.States`), value = death.p)
+
+state_choropleth(df_geo, title = "Contribution of Fetal Death to Total Death in US",
+                 legend = "Percentage")
+```
 
 ## Remarkable Fetal Characteristics
 
-### Most Relevant
+### Does Infant Weights matters?
+```{r}
+library(forcats)
+fetal_2 %>% 
+  na.omit() %>%
+  dplyr::group_by(Infant.Delivery.Weight.14) %>%
+  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::arrange(add) %>%
+  ggplot2::ggplot(aes(x = add, y = forcats::fct_reorder(Infant.Delivery.Weight.14,add))) +
+  ggplot2::geom_point(color = "blue") +
+  ggplot2::theme_linedraw() +
+  ggplot2::ylab("Percent") +
+  ggplot2::xlab("Infant Weight") +
+  ggplot2::ggtitle("Percent of Total Deaths for Different Infant Weights")
+```
 
-### Flow of Change
+### Relationships between delivery method and plurality of birth
+```{r}
+library(parcoords)
+library(GGally)
+library(ggalluvial)
+df_alluvial <- fetal_2 %>%
+  dplyr::group_by(Delivery.Method, Plurality.or.Multiple.Birth) %>%
+  dplyr::summarise(total = sum(Percent.of.Total.Deaths)) %>%
+  na.omit() 
+ggplot(df_alluvial, aes(axis1 = Delivery.Method, axis2 = Plurality.or.Multiple.Birth, 
+                        y = total)) +
+  geom_alluvium(color = "black" ) +
+  geom_stratum() +
+  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
+  scale_x_discrete(limits = c("Delivery Method","Multiple Birth")) +
+  ylab("Percentage to Total Death") +
+  ggtitle("Flow of change between delivery method and plurality of birth")
+```
+
+```{r}
+df_mosaic <- fetal_2 %>%
+  dplyr::group_by(Delivery.Method,Plurality.or.Multiple.Birth) %>%
+  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  na.omit()
+
+df_mosaic$Plurality.or.Multiple.Birth <- factor(df_mosaic$Plurality.or.Multiple.Birth,
+                                             levels = c("Single","Twin","Triplet"))
+  
+
+tab_mosaic <- xtabs(add~.,df_mosaic)
+
+vcd::mosaic(Delivery.Method~Plurality.or.Multiple.Birth, tab_mosaic,
+            direction = c("v","h"), set_labels=list(Plurality.or.Multiple.Birth 
+                                                    = c("1", "2",">3")),
+            gp_labels = grid::gpar(fontsize = 8), highlighting_fill = c("#D1E5F0","#2166AC"),
+            main = "Delivery Method vs. Multiple Birth Number")
+  
+```
+
+### LMP weeks
+```{r}
+df_bar <- fetal_2 %>%
+  dplyr::group_by(LMP.Gestational.Age.10) %>%
+  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::arrange(desc(add)) %>%
+  na.omit()
+
+ggplot(data = df_bar,aes(x = reorder(LMP.Gestational.Age.10,add), y=add)) +
+  geom_bar(stat = "identity",fill = "cornflowerblue") +
+  ggtitle("LMP Gestational Age Distribution") +
+  xlab("LMP Gestational Age") +
+  ylab("Percent to Total Death") +
+  coord_flip() +
+  theme(panel.grid.major.x = element_blank())
+```
+
+
 
 ## Maternal/Paternal Characteristics
 
@@ -79,7 +161,7 @@ library(tidyverse)
 library(ggplot2)
 parentsAge <- read.delim("parentsAge.txt") %>% 
   dplyr::select(Age.of.Mother.9, Age.of.Father,Fetal.Deaths) %>%
-  filter(Age.of.Father != "" & Age.of.Father != "Unknown or Not Stated" & Age.of.Father != "Not Reported")
+  dplyr::filter(Age.of.Father != "" & Age.of.Father != "Unknown or Not Stated" & Age.of.Father != "Not Reported")
 g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
   geom_col(position = "dodge") +
   coord_flip() + 
