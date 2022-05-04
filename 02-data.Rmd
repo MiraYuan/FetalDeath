@@ -1,2 +1,7 @@
 # Data sources
 
+All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2005-2019 Request**](https://wonder.cdc.gov/controller/datarequest/D133) (https://wonder.cdc.gov/controller/datarequest/D133). Since CDC Wonder only provides limited numbers of “group by” options, we needed to collect several datasets from the API. We first chose some fixed variables, such as year and age, to make sure we could combine the information in the following steps. Then, we downloaded the datasets with all other variables we would like to study.
+
+## Dataset Documentation
+
+

@@ -1,10 +1,5 @@
 # Results
 
-## Distributions of Fetal Deaths
-```{r}
-place <- fetal[,5:6]
-```
-
 ## Fetal Deaths By Time
 ```{r}
 library(ggplot2)
@@ -14,35 +9,47 @@ library(plotly)
 ### Total
 g1 <- fetal %>%
   group_by(Year) %>%
-  summarise(add = sum(Fetal.Deaths)) %>%
-  ggplot(aes(x = Year, y = add)) +
+  summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
+  ggplot(aes(x = Year, y = add_p)) +
   geom_line() +
   geom_point(alpha = 0.5) +
-  geom_point(aes(x = 2007, y = 26593), color = "red") +
-  geom_text(aes(label = add), nudge_x = 0.5, nudge_y = -150, size = 3) +
-  labs(x = "Numbers of Total Fetal Deaths", y = "Year",
-       title = "Fetal Deaths Over Years") +
+  geom_point(aes(x = 2007, y = 7.22), color = "red") +
+  geom_text(aes(label = add_p), nudge_x = 0.4, nudge_y = -0.06, size = 3) +
+  labs(x = "Year", y = "Total Fetal Death Rate",
+       title = "Fetal Death Rate Over Years") +
   scale_x_continuous(breaks = seq(2005, 2019, 1))
 g1
 
 
 g2 <- fetal %>%
   group_by(Sex, Year) %>%
-  summarise(add_g = sum(Fetal.Deaths)) %>%
-  ggplot(aes(x = Year, y = add_g, col = Sex)) +
+  summarise(add_g = sum(Fetal.Deaths), add_g_p = sum(Percent.of.Total.Deaths)) %>%
+  ggplot(aes(x = Year, y = add_g_p, col = Sex)) +
   geom_line() +
   geom_point(alpha = 0.5) +
-  labs(x = "Numbers of Fetal Deaths", y = "Year",
-       title = "Fetal Deaths by Different Sexes Over Years") +
+  labs(x = "Year", y = "Fetal Death Rate",
+       title = "Fetal Death Rate by Different Genders Over Years") +
   scale_x_continuous(breaks = seq(2005, 2019, 1))
 
 start = 2007
 end = 2008
 g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf, 
               fill = "green", alpha = .2) +
-  annotate("text", x = 2008.1, y = 12700 , label = "2007-2008", 
+  annotate("text", x = 2008.1, y = 3, label = "2007-2008", 
            color = "black", hjust = 0) +
   theme_classic()
+
+# g3 <- birth_s_g %>%
+#   group_by(Gender, Year) %>%
+#   summarise(sum = sum(Births)) %>%
+#   ggplot(aes(x = Year, y = sum, col = Gender)) +
+#   geom_line() +
+#   geom_point() +
+#   labs(x = "Year", y = "Number of Births", 
+#        title = "Number of Births by Different Genders Over Years") +
+#   theme_classic() +
+#   scale_x_continuous(breaks = seq(2007, 2019, 1))
+# g3
 
 # fetal %>%
 #   group_by(Year) %>%
@@ -52,8 +59,12 @@ g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf,
 #   layout(title = "Total Fetal Deaths Over Years", 
 #          xaxis = list(title = "Year", breaks = seq(2005, 2019, 1)),
 #          yaxis = list(title = "Number of Total Death"))
-  
 ```
+
+First of all, let us take a look at how the fetal death rates changed between 2005 and 2019. We can clearly see a decreasing trend since 2007. Since we don’t have data before 2007, even though our graphs show there might be an increasing trend before 2007, we cannot simply make a conclusion. After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death rate had a sharper decrease than male data did. This decreasing trend is a good indicator, showing an improvement in national health. It is also unsurprising: with the development of technology and medical skills, we can now detect any potential factors that lead to fetus deaths more efficiently.
+
+
+## Distributions of Fetal Deaths
 
 ## Remarkable Fetal Characteristics
 
