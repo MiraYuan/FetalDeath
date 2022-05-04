@@ -22,7 +22,9 @@ g_by_year <- dygraph(fetal_by_year) %>%
 g_by_year
 ```
 
+
 ## Select Congenital Anomalies of The Fetus in US
+
 ```{r}
 library(plotly)
 #library(shiny)
@@ -171,6 +173,21 @@ ane_plot %>%
       )
     )
   ))
+
+```
+
+## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
+```{r}
+# install.packages("remotes")
+# remotes::install_github("hrbrmstr/streamgraph")
+library(streamgraph)
+#library(tidyverse)
+
+data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
+  summarise(Deaths = sum(Fetal.Deaths))
+g_age_year <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Year") %>%
+  sg_legend(show=TRUE, label="names: ")
+g_age_year
 ```
 
 
