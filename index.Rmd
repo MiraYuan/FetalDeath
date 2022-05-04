@@ -1,6 +1,6 @@
 --- 
 title: "Research on Fetal Deaths"
-author: "Jiayi Yuan & Yayun Luo"
+author: "Jiayi Yuan (jy3162) & Yayun Luo (yl4832)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
@@ -17,4 +17,4 @@ The fetal mortality rate is the measure of poor reproductive health outcomes. It
 
 We believe that the death of a fetal is not only a sad tragedy for the family, but also has a very negative impact on an Aging American society. Therefore, in this project, we aim to explore the causes of fetal death. We will analyze the distribution of fetal mortality in the United States from the perspective of time and space. We will also examine whether specific characteristics of parents contribute to fetal mortality.
 
-This project is completed by Jiayi Yuan(JY3162) and Yayun Luo(YL4823). The following link contains all the project content: https://github.com/MiraYuan/FetalDeath.
+For more details of our project, please check out [**GitHub repository**](https://github.com/MiraYuan/FetalDeath) or copy the following link https://github.com/MiraYuan/FetalDeath and paste it in your browser. 
