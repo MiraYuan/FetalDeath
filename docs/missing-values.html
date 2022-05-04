@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Missing values | Research on Fetal Deaths</title>
   <meta name="description" content="Chapter 4 Missing values | Research on Fetal Deaths" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Missing values | Research on Fetal Deaths" />
   <meta property="og:type" content="book" />
@@ -52,6 +52,21 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plugins.Crosshair-1.0/crosshair.js"></script>
 
 
 
@@ -72,23 +87,11 @@
 <li><a href="./">fetaldeath</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation</a></li>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation<span></span></a></li>
 </ul></li>
-<<<<<<< HEAD
-<li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
-<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#fetal-deaths-by-time"><i class="fa fa-check"></i><b>5.1</b> Fetal Deaths By Time</a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#distributions-of-fetal-deaths"><i class="fa fa-check"></i><b>5.2</b> Distributions of Fetal Deaths</a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#remarkable-fetal-characteristics"><i class="fa fa-check"></i><b>5.3</b> Remarkable Fetal Characteristics</a>
-<ul>
-<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#most-relevant"><i class="fa fa-check"></i><b>5.3.1</b> Most Relevant</a></li>
-<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#flow-of-change"><i class="fa fa-check"></i><b>5.3.2</b> Flow of Change</a></li>
-=======
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
@@ -103,19 +106,17 @@
 <li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#does-infant-weights-matters"><i class="fa fa-check"></i><b>5.3.1</b> Does Infant Weights matters?<span></span></a></li>
 <li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#relationships-between-delivery-method-and-plurality-of-birth"><i class="fa fa-check"></i><b>5.3.2</b> Relationships between delivery method and plurality of birth<span></span></a></li>
 <li class="chapter" data-level="5.3.3" data-path="results.html"><a href="results.html#lmp-weeks"><i class="fa fa-check"></i><b>5.3.3</b> LMP weeks<span></span></a></li>
->>>>>>> 4e560594615b2ddc5ac790046b54598147b08409
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#maternalpaternal-characteristics"><i class="fa fa-check"></i><b>5.4</b> Maternal/Paternal Characteristics</a>
+<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#maternalpaternal-characteristics"><i class="fa fa-check"></i><b>5.4</b> Maternal/Paternal Characteristics<span></span></a>
 <ul>
-<<<<<<< HEAD
-<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#clevland-plot"><i class="fa fa-check"></i><b>5.4.1</b> Clevland plot</a></li>
-=======
 <li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#clevland-plot"><i class="fa fa-check"></i><b>5.4.1</b> Clevland plot<span></span></a></li>
->>>>>>> 4e560594615b2ddc5ac790046b54598147b08409
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
-<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#the-total-amount-of-fetal-death-from-2005-to-2019"><i class="fa fa-check"></i><b>6.1</b> The Total Amount of Fetal Death from 2005 to 2019<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -139,7 +140,7 @@
 <h1><span class="header-section-number">Chapter 4</span> Missing values<a href="missing-values.html#missing-values" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="fetus-death-dataset-used-for" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Fetus Death Dataset used for<a href="missing-values.html#fetus-death-dataset-used-for" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
 
 </div>
 </div>

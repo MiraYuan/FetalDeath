@@ -117,5 +117,6 @@ plot_missing(fetal_2)
 # df <- data.frame(Dataset = c("Fetal Death", "Natality", "Natality with gender and state"),
 #            "Missing Values" = c(f1, b1, b2))
 # knitr::kable(df)
+plot_missing(fetal_con)
 ```
 

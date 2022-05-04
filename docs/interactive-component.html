@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Interactive component | Research on Fetal Deaths</title>
   <meta name="description" content="Chapter 6 Interactive component | Research on Fetal Deaths" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Interactive component | Research on Fetal Deaths" />
   <meta property="og:type" content="book" />
@@ -52,6 +52,21 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plugins.Crosshair-1.0/crosshair.js"></script>
 
 
 
@@ -72,23 +87,11 @@
 <li><a href="./">fetaldeath</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation</a></li>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation<span></span></a></li>
 </ul></li>
-<<<<<<< HEAD
-<li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
-<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#fetal-deaths-by-time"><i class="fa fa-check"></i><b>5.1</b> Fetal Deaths By Time</a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#distributions-of-fetal-deaths"><i class="fa fa-check"></i><b>5.2</b> Distributions of Fetal Deaths</a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#remarkable-fetal-characteristics"><i class="fa fa-check"></i><b>5.3</b> Remarkable Fetal Characteristics</a>
-<ul>
-<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#most-relevant"><i class="fa fa-check"></i><b>5.3.1</b> Most Relevant</a></li>
-<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#flow-of-change"><i class="fa fa-check"></i><b>5.3.2</b> Flow of Change</a></li>
-=======
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
@@ -103,19 +106,17 @@
 <li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#does-infant-weights-matters"><i class="fa fa-check"></i><b>5.3.1</b> Does Infant Weights matters?<span></span></a></li>
 <li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#relationships-between-delivery-method-and-plurality-of-birth"><i class="fa fa-check"></i><b>5.3.2</b> Relationships between delivery method and plurality of birth<span></span></a></li>
 <li class="chapter" data-level="5.3.3" data-path="results.html"><a href="results.html#lmp-weeks"><i class="fa fa-check"></i><b>5.3.3</b> LMP weeks<span></span></a></li>
->>>>>>> 4e560594615b2ddc5ac790046b54598147b08409
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#maternalpaternal-characteristics"><i class="fa fa-check"></i><b>5.4</b> Maternal/Paternal Characteristics</a>
+<li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#maternalpaternal-characteristics"><i class="fa fa-check"></i><b>5.4</b> Maternal/Paternal Characteristics<span></span></a>
 <ul>
-<<<<<<< HEAD
-<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#clevland-plot"><i class="fa fa-check"></i><b>5.4.1</b> Clevland plot</a></li>
-=======
 <li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#clevland-plot"><i class="fa fa-check"></i><b>5.4.1</b> Clevland plot<span></span></a></li>
->>>>>>> 4e560594615b2ddc5ac790046b54598147b08409
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
-<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#the-total-amount-of-fetal-death-from-2005-to-2019"><i class="fa fa-check"></i><b>6.1</b> The Total Amount of Fetal Death from 2005 to 2019<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -137,8 +138,14 @@
             <section class="normal" id="section-">
 <div id="interactive-component" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Interactive component<a href="interactive-component.html#interactive-component" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Understand fetal death by region</p>
+<div id="htmlwidget-5dcbb81909f4e9b45f6e" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5dcbb81909f4e9b45f6e">{"x":{"visdat":{"10641db18a0e":["function () ","plotlyVisDat"]},"cur_data":"10641db18a0e","attrs":{"10641db18a0e":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"z":{},"text":["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],"span":[1],"locations":["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"],"locationmode":"USA-states","colors":"Blues","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","geo":{"domain":{"x":[0,1],"y":[0,1]},"scope":"usa","projection":{"type":"albers usa"},"lakecolor":"rgba(255,255,255,1)"},"scene":{"zaxis":{"title":"percent"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"percent","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(247,251,255,1)"],["0.0416666666666667","rgba(239,246,252,1)"],["0.0833333333333333","rgba(230,240,250,1)"],["0.125","rgba(222,235,247,1)"],["0.166666666666667","rgba(214,230,244,1)"],["0.208333333333333","rgba(206,224,242,1)"],["0.25","rgba(198,219,239,1)"],["0.291666666666667","rgba(185,213,234,1)"],["0.333333333333333","rgba(172,208,230,1)"],["0.375","rgba(158,202,225,1)"],["0.416666666666667","rgba(142,193,221,1)"],["0.458333333333333","rgba(125,183,218,1)"],["0.5","rgba(107,174,214,1)"],["0.541666666666667","rgba(94,165,209,1)"],["0.583333333333333","rgba(81,155,203,1)"],["0.625","rgba(66,146,198,1)"],["0.666666666666667","rgba(57,135,192,1)"],["0.708333333333333","rgba(46,124,187,1)"],["0.75","rgba(33,113,181,1)"],["0.791666666666667","rgba(27,102,173,1)"],["0.833333333333333","rgba(19,91,164,1)"],["0.875","rgba(8,81,156,1)"],["0.916666666666667","rgba(9,70,139,1)"],["0.958333333333333","rgba(9,59,123,1)"],["1","rgba(8,48,107,1)"]],"showscale":true,"z":[0.01,0.01,0.01,0.06,0.01,0.01,0.06,0.02,0,0.02,0.01,0.01,0.01,0,0.01,0.02,0.01,0.03,0,0.01,0.01,0.01,0.02,0.01,0.02,0.02,0,0.01,0.04,0.01,0,0.01,0.07,0.01,0.01,0.03,0.01],"text":["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon"],"locations":["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR"],"locationmode":"USA-states","type":"choropleth","marker":{"line":{"color":"rgba(31,119,180,1)","width":1}},"geo":"geo","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="the-total-amount-of-fetal-death-from-2005-to-2019" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> The Total Amount of Fetal Death from 2005 to 2019<a href="interactive-component.html#the-total-amount-of-fetal-death-from-2005-to-2019" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="htmlwidget-e47efb27a42a1fd1f9e4" style="width:672px;height:480px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e47efb27a42a1fd1f9e4">{"x":{"attrs":{"labels":["Year","Total Fetal Deaths"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"stackedGraph":false,"fillGraph":true,"fillAlpha":0.1,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colors":["#D8AE5A"],"colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":true,"maxNumberWidth":6,"animatedZooms":false,"mobileDisableYTouch":true,"disableZoom":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","highlightCircleSize":5,"highlightSeriesBackgroundAlpha":0.2,"highlightSeriesOpts":[],"hideOverlayOnMouseOut":false,"showRoller":true,"rollPeriod":1},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],[25894,25972,26593,26335,24872,24258,24289,24073,23595,23980,23776,23880,22827,22459,21478]],"fixedtz":false,"tzone":"","plugins":{"Crosshair":{"direction":"vertical"}}},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
 
+</div>
 </div>
             </section>
 
