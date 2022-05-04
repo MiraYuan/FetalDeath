@@ -89,6 +89,7 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
   ylab("# of Fetal Deaths")
 print(g_age)
 ```
+
 ```{r}
 race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
   filter(Mother.s.Bridged.Race != "Not Reported") %>%
@@ -96,8 +97,8 @@ race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
   summarize(n = n())
 
 library(ggridges)
-g_race <- ggplot(race, aes(x = Year, y = n, fill = Mother.s.Bridged.Race)) +
-  geom_density_ridges() +
+g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
+  geom_density_ridges(aes(n)) +
   theme_ridges() + 
   theme(legend.position = "none") +
   ggtitle("")
