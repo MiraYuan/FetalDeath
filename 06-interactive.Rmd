@@ -40,8 +40,8 @@ data <- fetal %>% group_by(Age.of.Mother.9, Year) %>%
   summarise(Deaths = sum(Fetal.Deaths))
  
 # Stream graph with a legend
-g <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Year") %>%
+g_age_year <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Year") %>%
   sg_legend(show=TRUE, label="names: ")
-g
+g_age_year
 ```
 
