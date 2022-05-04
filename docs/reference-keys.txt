@@ -1,0 +1,17 @@
+introduction
+data-sources
+dataset-documentation
+data-transformation
+missing-values
+fetus-death-dataset-used-for
+results
+fetal-deaths-over-years
+geographical-distribution
+remarkable-fetal-characteristics
+does-infant-weights-matters
+relationships-between-delivery-method-and-plurality-of-birth
+lmp-weeks
+maternalpaternal-characteristics
+clevland-plot
+interactive-component
+conclusion
