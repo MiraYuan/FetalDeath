@@ -74,6 +74,26 @@ First of all, let us take a look at how the fetal death rates changed between 20
 
 ## Maternal/Paternal Characteristics
 
+```{r}
+library(tidyverse)
+library(ggplot2)
+parentsAge <- read.delim("parentsAge.txt") %>% 
+  dplyr::select(Age.of.Mother.9, Age.of.Father,Fetal.Deaths) %>%
+  filter(Age.of.Father != "" & Age.of.Father != "Unknown or Not Stated" & Age.of.Father != "Not Reported")
+g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
+  geom_col(position = "dodge") +
+  coord_flip() + 
+  facet_wrap(~Age.of.Mother.9) + 
+  ggtitle("Fetal Deaths Faceted by Maternal Age") + 
+  xlab("Paternal Age") +
+  ylab("# of Fetal Deaths")
+print(g_age)
+```
+```{r}
+Race_N_Marriage <- read.delim("RaceNMarriage.txt")
+```
+
+
 ### Clevland plot (age vs fetal death, facet by marital status)
 
 

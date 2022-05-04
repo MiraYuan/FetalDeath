@@ -1,0 +1,143 @@
+"Notes"	"Age of Mother 9"	"Age of Mother 9 Code"	"Age of Father"	"Age of Father Code"	Fetal Deaths
+	"Under 15 years"	"15"	"Under 15 years"	"15"	27
+	"Under 15 years"	"15"	"15-19 years"	"15-19"	174
+	"Under 15 years"	"15"	"20-24 years"	"20-24"	19
+	"Under 15 years"	"15"	"25-29 years"	"25-29"	9
+	"Under 15 years"	"15"	"30-34 years"	"30-34"	2
+	"Under 15 years"	"15"	"35-39 years"	"35-39"	4
+	"Under 15 years"	"15"	"50-54 years"	"50-54"	1
+	"Under 15 years"	"15"	"Unknown or Not Stated"	"NS"	446
+	"Under 15 years"	"15"	"Not Reported"	"NR"	37
+"Total"	"Under 15 years"	"15"			719
+	"15-19 years"	"15-19"	"Under 15 years"	"15"	40
+	"15-19 years"	"15-19"	"15-19 years"	"15-19"	7752
+	"15-19 years"	"15-19"	"20-24 years"	"20-24"	8558
+	"15-19 years"	"15-19"	"25-29 years"	"25-29"	1929
+	"15-19 years"	"15-19"	"30-34 years"	"30-34"	548
+	"15-19 years"	"15-19"	"35-39 years"	"35-39"	208
+	"15-19 years"	"15-19"	"40-44 years"	"40-44"	73
+	"15-19 years"	"15-19"	"45-49 years"	"45-49"	32
+	"15-19 years"	"15-19"	"50-54 years"	"50-54"	12
+	"15-19 years"	"15-19"	"55 years and older"	"55+"	14
+	"15-19 years"	"15-19"	"Unknown or Not Stated"	"NS"	12437
+	"15-19 years"	"15-19"	"Not Reported"	"NR"	1442
+"Total"	"15-19 years"	"15-19"			33045
+	"20-24 years"	"20-24"	"Under 15 years"	"15"	13
+	"20-24 years"	"20-24"	"15-19 years"	"15-19"	1896
+	"20-24 years"	"20-24"	"20-24 years"	"20-24"	24848
+	"20-24 years"	"20-24"	"25-29 years"	"25-29"	17850
+	"20-24 years"	"20-24"	"30-34 years"	"30-34"	5489
+	"20-24 years"	"20-24"	"35-39 years"	"35-39"	1862
+	"20-24 years"	"20-24"	"40-44 years"	"40-44"	649
+	"20-24 years"	"20-24"	"45-49 years"	"45-49"	259
+	"20-24 years"	"20-24"	"50-54 years"	"50-54"	103
+	"20-24 years"	"20-24"	"55 years and older"	"55+"	58
+	"20-24 years"	"20-24"	"Unknown or Not Stated"	"NS"	23979
+	"20-24 years"	"20-24"	"Not Reported"	"NR"	4569
+"Total"	"20-24 years"	"20-24"			81575
+	"25-29 years"	"25-29"	"Under 15 years"	"15"	4
+	"25-29 years"	"25-29"	"15-19 years"	"15-19"	255
+	"25-29 years"	"25-29"	"20-24 years"	"20-24"	5543
+	"25-29 years"	"25-29"	"25-29 years"	"25-29"	30474
+	"25-29 years"	"25-29"	"30-34 years"	"30-34"	20815
+	"25-29 years"	"25-29"	"35-39 years"	"35-39"	6504
+	"25-29 years"	"25-29"	"40-44 years"	"40-44"	2156
+	"25-29 years"	"25-29"	"45-49 years"	"45-49"	775
+	"25-29 years"	"25-29"	"50-54 years"	"50-54"	272
+	"25-29 years"	"25-29"	"55 years and older"	"55+"	158
+	"25-29 years"	"25-29"	"Unknown or Not Stated"	"NS"	21938
+	"25-29 years"	"25-29"	"Not Reported"	"NR"	5526
+"Total"	"25-29 years"	"25-29"			94420
+	"30-34 years"	"30-34"	"Under 15 years"	"15"	7
+	"30-34 years"	"30-34"	"15-19 years"	"15-19"	61
+	"30-34 years"	"30-34"	"20-24 years"	"20-24"	1338
+	"30-34 years"	"30-34"	"25-29 years"	"25-29"	7598
+	"30-34 years"	"30-34"	"30-34 years"	"30-34"	28968
+	"30-34 years"	"30-34"	"35-39 years"	"35-39"	17192
+	"30-34 years"	"30-34"	"40-44 years"	"40-44"	5255
+	"30-34 years"	"30-34"	"45-49 years"	"45-49"	1740
+	"30-34 years"	"30-34"	"50-54 years"	"50-54"	589
+	"30-34 years"	"30-34"	"55 years and older"	"55+"	303
+	"30-34 years"	"30-34"	"Unknown or Not Stated"	"NS"	15742
+	"30-34 years"	"30-34"	"Not Reported"	"NR"	5398
+"Total"	"30-34 years"	"30-34"			84191
+	"35-39 years"	"35-39"	"Under 15 years"	"15"	2
+	"35-39 years"	"35-39"	"15-19 years"	"15-19"	38
+	"35-39 years"	"35-39"	"20-24 years"	"20-24"	395
+	"35-39 years"	"35-39"	"25-29 years"	"25-29"	1779
+	"35-39 years"	"35-39"	"30-34 years"	"30-34"	6500
+	"35-39 years"	"35-39"	"35-39 years"	"35-39"	16675
+	"35-39 years"	"35-39"	"40-44 years"	"40-44"	9011
+	"35-39 years"	"35-39"	"45-49 years"	"45-49"	2988
+	"35-39 years"	"35-39"	"50-54 years"	"50-54"	956
+	"35-39 years"	"35-39"	"55 years and older"	"55+"	433
+	"35-39 years"	"35-39"	"Unknown or Not Stated"	"NS"	9805
+	"35-39 years"	"35-39"	"Not Reported"	"NR"	3562
+"Total"	"35-39 years"	"35-39"			52144
+	"40-44 years"	"40-44"	"Under 15 years"	"15"	2
+	"40-44 years"	"40-44"	"15-19 years"	"15-19"	7
+	"40-44 years"	"40-44"	"20-24 years"	"20-24"	103
+	"40-44 years"	"40-44"	"25-29 years"	"25-29"	394
+	"40-44 years"	"40-44"	"30-34 years"	"30-34"	899
+	"40-44 years"	"40-44"	"35-39 years"	"35-39"	2450
+	"40-44 years"	"40-44"	"40-44 years"	"40-44"	4741
+	"40-44 years"	"40-44"	"45-49 years"	"45-49"	2370
+	"40-44 years"	"40-44"	"50-54 years"	"50-54"	836
+	"40-44 years"	"40-44"	"55 years and older"	"55+"	355
+	"40-44 years"	"40-44"	"Unknown or Not Stated"	"NS"	3222
+	"40-44 years"	"40-44"	"Not Reported"	"NR"	1146
+"Total"	"40-44 years"	"40-44"			16525
+	"45-49 years"	"45-49"	"15-19 years"	"15-19"	2
+	"45-49 years"	"45-49"	"20-24 years"	"20-24"	10
+	"45-49 years"	"45-49"	"25-29 years"	"25-29"	30
+	"45-49 years"	"45-49"	"30-34 years"	"30-34"	52
+	"45-49 years"	"45-49"	"35-39 years"	"35-39"	109
+	"45-49 years"	"45-49"	"40-44 years"	"40-44"	219
+	"45-49 years"	"45-49"	"45-49 years"	"45-49"	422
+	"45-49 years"	"45-49"	"50-54 years"	"50-54"	174
+	"45-49 years"	"45-49"	"55 years and older"	"55+"	94
+	"45-49 years"	"45-49"	"Unknown or Not Stated"	"NS"	314
+	"45-49 years"	"45-49"	"Not Reported"	"NR"	122
+"Total"	"45-49 years"	"45-49"			1548
+	"50 years and over"	"50+"	"15-19 years"	"15-19"	1
+	"50 years and over"	"50+"	"20-24 years"	"20-24"	5
+	"50 years and over"	"50+"	"25-29 years"	"25-29"	1
+	"50 years and over"	"50+"	"30-34 years"	"30-34"	4
+	"50 years and over"	"50+"	"35-39 years"	"35-39"	6
+	"50 years and over"	"50+"	"40-44 years"	"40-44"	14
+	"50 years and over"	"50+"	"45-49 years"	"45-49"	15
+	"50 years and over"	"50+"	"50-54 years"	"50-54"	14
+	"50 years and over"	"50+"	"55 years and older"	"55+"	16
+	"50 years and over"	"50+"	"Unknown or Not Stated"	"NS"	23
+	"50 years and over"	"50+"	"Not Reported"	"NR"	15
+"Total"	"50 years and over"	"50+"			114
+"Total"					364281
+"---"
+"Dataset: Fetal Deaths, 2005-2019"
+"Query Parameters:"
+"Group By: Age of Mother 9; Age of Father"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/fetal-deaths.html for more information."
+"---"
+"Query Date: May 3, 2022 3:47:23 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics (DVS). Fetal Deaths 2005-2019, as compiled"
+"from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program, on CDC WONDER"
+"Online Database. Accessed at http://wonder.cdc.gov/fetal-deaths-current.html on May 3, 2022 3:47:23 PM"
+"---"
+Messages:
+"1. Rows with zero Fetal Deaths are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. Age of Father is coded to ""Not Reported"" for the following years and reporting areas: Alabama 2017-2018; District of"
+"Columbia 2017-2018; Georgia 2017-2018; New Jersey 2017-2018; New York 2017-2018; New York, Upstate 2017-2018; New York City"
+"2017-2018; Tennessee 2017; Virginia 2005-2018."
+"2. Beginning in 2014, NCHS changed the standard for gestational period from the Last Menstrual Period (LMP) based gestational"
+"age to the Obstetric/clinical Estimate (OE) based gestational age. This change has resulted in a discontinuity in identifying"
+"fetal deaths at 20 weeks or greater for inclusion in this dataset. Refer to the User Guide to the Fetal Death Public Use File:"
+"https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm. and the Measuring Gestational Age in Vital Statistics Data:"
+"Transitioning to the Obstetric Estimate: https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf. report for more information."
