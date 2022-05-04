@@ -1,5 +1,7 @@
 # Missing values
 
+## Fetus Death Dataset used for 
+
 ```{r}
 library(redav)
 plot_missing <- function(x, percent = TRUE) {	
@@ -44,7 +46,7 @@ plot_missing <- function(x, percent = TRUE) {
     ggplot2::ylab("missing pattern") +	
     ggplot2::guides(fill = "none", alpha = "none") +	
     ggplot2::theme_classic(12) +
-    ggplot2::theme(axis.text.x = element_text(angle = 60, size=7,vjust = -0.05))
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, size=7))
   
   # check for "none missing" pattern
   none_missing_pattern <- na_count_by_pattern %>%
@@ -70,8 +72,8 @@ plot_missing <- function(x, percent = TRUE) {
     ggplot2::ylab(ifelse(percent, "% rows \n missing:", "num rows \n missing:")) +	
     ggplot2::theme_linedraw(12) + 	
     ggplot2::theme(panel.grid.major.x = ggplot2::element_blank(),	
-          panel.grid.minor.x = ggplot2::element_blank(), 
-          axis.text.x = element_text(angle = 60, size = 7,vjust = -0.05))	
+          panel.grid.minor.x = ggplot2::element_blank(),
+          axis.text.x = ggplot2::element_text(angle = 90, size=7))	
   
   missing_by_pattern_plot <- 
     ggplot2::ggplot(na_count_by_pattern, 
@@ -97,25 +99,23 @@ plot_missing <- function(x, percent = TRUE) {
                          limits = c(0, 100))	
   }
   
-  par(mfrow = c(2, 2))
+  #par(mfrow = c(2, 2))
   list(main_plot, missing_by_column_plot, missing_by_pattern_plot)
   missing_by_column_plot + patchwork::plot_spacer() +
     main_plot + missing_by_pattern_plot +
-    patchwork::plot_layout(widths = c(4, 1), heights = c(2, 4))
+    patchwork::plot_layout(widths = c(4, 1), heights = c(1, 4))
  }
 
 #utils::globalVariables("where")
 ```
 
 ```{r comment=NA}
-#plot_missing(fetal)
-f1 <- sum(is.na(fetal))
-b1 <- sum(is.na(birth))
-b2 <- sum(is.na(birth_s_g))
-df <- data.frame(Dataset = c("Fetal Death", "Natality", "Natality with gender and state"),
-           "Missing Values" = c(f1, b1, b2))
-print(df, row.names = FALSE)
+plot_missing(fetal_2)
+# f1 <- sum(is.na(fetal))
+# b1 <- sum(is.na(birth))
+# b2 <- sum(is.na(birth_s_g))
+# df <- data.frame(Dataset = c("Fetal Death", "Natality", "Natality with gender and state"),
+#            "Missing Values" = c(f1, b1, b2))
+# knitr::kable(df)
 ```
-
-Thanks to CDC, all the natality datasets and fetal death datasets we downloaded don't have any missing values. All the "NA" s or empty rows were created by the column of the dataset's metadata. After deleting those empty rows, we got perfect datasets without any missing values.
 
