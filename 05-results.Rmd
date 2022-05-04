@@ -171,12 +171,42 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
   ylab("# of Fetal Deaths")
 print(g_age)
 ```
+
 ```{r}
-Race_N_Marriage <- read.delim("RaceNMarriage.txt")
+race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
+  filter(Mother.s.Bridged.Race != "Not Reported") %>%
+  group_by(Mother.s.Bridged.Race, Year) %>%
+  summarize(n = n())
+
+library(ggridges)
+g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
+  geom_density_ridges(aes(n)) +
+  theme_ridges() + 
+  theme(legend.position = "none") +
+  ggtitle("")
+print(g_race)
 ```
 
 
-### Clevland plot (age vs fetal death, facet by marital status)
 
 
+
+### Clevland plot
+
+```{r}
+Race_N_Marriage <- read.delim("RaceNMarriage.txt") %>% 
+  rename('Maternal_Race' = Mother.s.Bridged.Race) %>%
+  rename('Maternal Marital Status' = Mother.s.Marital.Status) %>% 
+  na.omit() %>%
+  dplyr::select(`Maternal_Race`, `Maternal Marital Status`, Fetal.Deaths) %>%
+  filter(`Maternal Marital Status` == "Married" | `Maternal Marital Status` == "Unmarried") %>%
+  group_by(Maternal_Race,'Maternal Marital Status')
+
+ggplot(Race_N_Marriage, aes(x = Maternal_Race, y = Fetal.Deaths, color = `Maternal Marital Status`)) +
+  geom_point(size = 3) +
+  coord_flip() +
+#  facet_wrap(~Maternal Marital Status)+
+  ylab("# of Fetal Deaths") +
+  xlab("Maternal Race")
+```
 
