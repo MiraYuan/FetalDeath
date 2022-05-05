@@ -165,6 +165,7 @@ mosaicplot(tab_mosaic, direction = c("h","v"),
            xlab = "Delivery Method", ylab = "Plurality", color = 
              c("#DEEBF7","#9ECAE1","#4292C6","#08306B"))
 ```
+We plotted the relationship between different delivery methods, the number of fetuses per birth and the number of fetal deaths. Above is a Mosaic plot. From the graph above, we can clearly see that the number of fetal deaths caused by cesarean is much lower than that caused by vaginal delivery, no matter the fetus is single, twin, triplet or more. Moreover, singletons were the most likely to die, regardless of delivery method.
 
 ### Gestational Age
 ```{r}

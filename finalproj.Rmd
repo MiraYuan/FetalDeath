@@ -402,6 +402,10 @@ fetal_2 %>%
   ggplot2::ggtitle("Percent of Total Deaths for Different Infant Weights")
 ```
 
+According to the World Health Organization (WHO), the average weight at birth for a full-term baby boy is 3,300 grams (g). The average full-term baby girl weighs 3,200 g, at birth. The average baby born at 37 to 40 weeks weighs between 2,500 to 4,000 grams. Birth weights less than 2,500 grams will be considered low birth weights.
+
+From the figure above, we can see that fetuses with a birth weight of 500-999 grams and fetuses with a birth weight of 350-499 grams died the most. The number of deaths of fetuses with birth weights in these two ranges was much higher than for any other birth weight. Not only that, we can also see that the top number of deaths of fetuses were under 2500 grams of birth weight. So we can conclude that underweight fetuses have a higher mortality rate. However, the data shows that the number of fetal deaths outside the average range of fetal weight is low.
+
 ### Plurality of Birth
 ```{r}
 df_plur <- fetal_3 %>%
@@ -425,6 +429,8 @@ ggplot(data = df_plur_new, aes(x = Plurality, y = add)) +
   ylab("Number of Fetal Deaths") +
   ggtitle("Distributions of Fetal Deaths in Multiple Birth")
 ```
+
+In this part, we analyze whether the plurality of birth affects the number of fetal death. The above plot is a violin plot. The violin plot effectively shows not only median, range and variability, but also data distribution and its probability density. In the chart above, we can see that the single births have the widest distribution of fetal deaths and the highest number of fetal deaths.
 
 ### Infant Delivery Method
 ```{r}
@@ -503,18 +509,17 @@ print(g_age)
 ```
 
 ```{r}
-race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
-  filter(Mother.s.Bridged.Race != "Not Reported") %>%
-  group_by(Mother.s.Bridged.Race, Year) %>%
-  summarize(n = n())
+#race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
+#  filter(Mother.s.Bridged.Race != "Not Reported") %>%
+#  group_by(Mother.s.Bridged.Race, Year) %>%
+#  summarize(n = n())
 
-library(ggridges)
-g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
-  geom_density_ridges(aes(n)) +
-  theme_ridges() + 
-  theme(legend.position = "none") +
-  ggtitle("")
-print(g_race)
+#library(ggridges)
+#g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
+#  geom_density_ridges(aes(n)) +
+#  theme_ridges() + 
+#  theme(legend.position = "none") +
+#  ggtitle("")
 ```
 
 
