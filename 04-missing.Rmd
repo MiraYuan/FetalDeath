@@ -1,6 +1,8 @@
 # Missing values
 
-## Fetus Death Dataset used for 
+The variables that do not have the categories of "not available" or "not stated" do not have any missing values. Therefore, we only checked the datasets with variables that have those categories.
+
+## Fetal Characteristics Dataset
 
 ```{r}
 library(redav)
@@ -111,12 +113,15 @@ plot_missing <- function(x, percent = TRUE) {
 
 ```{r comment=NA}
 plot_missing(fetal_2)
-# f1 <- sum(is.na(fetal))
-# b1 <- sum(is.na(birth))
-# b2 <- sum(is.na(birth_s_g))
-# df <- data.frame(Dataset = c("Fetal Death", "Natality", "Natality with gender and state"),
-#            "Missing Values" = c(f1, b1, b2))
-# knitr::kable(df)
+```
+
+As we can see from the graphs, most rows in the dataset we used to study fetal characteristics do not have any missing values, and only a tiny part of the rows miss more than two variables. We can notice that, from most to least, the missed variables are *LMP Gestational Age*, *Infant Delivery Weight* and *Delivery Method*. We think the miss of this data was because of difficulties of documenting, unnecessary of recording, or informality of the delivery places.
+
+## Congenital Anomalies Dataset
+
+```{r}
 plot_missing(fetal_con)
 ```
+
+By checking the missing patterns of the dataset we used to study fetuses' congenital anomalies, we notice that there are only two situations: complete cases and miss of all congenital anomalies data. Even though more than 25% of rows missed all congenital data, it was because the variables were recorded as "Not stated" and "Not available," which doubled the number of *NA* values. Since we focused on each congenital anomaly separately, we do not need to worry too much about the rows that missed all the data.
 

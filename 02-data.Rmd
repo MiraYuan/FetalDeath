@@ -21,6 +21,7 @@ Following is a brief introduction to the variables we studied:
 
 * Year: Year of birth, 2005-2019
 * Sex: Female, Male
+* Delivery Weight: classfied by groups of 249 grams or less; 250 - 349 grams, 350 - 499 grams, 500 gram increments up to 4999 grams; 5000 - 8165 grams; unknown or not stated
 * Plurality or Multiple Birth: Single; twin; triplet; quadruplet; quadruplet or higher; quintuplet or higher
 * LMP Gestational Age: classified by groups for 20 - 23 weeks; 24 - 27 weeks; 28 - 31 weeks; 32 - 35 weeks; 36 weeks; 37-39 weeks; 39 weeks, 40 weeks; 41 weeks; 42 or more weeks; unknown; not available
 * Delivery Method: Vaginal; cesarean; not stated; not reported
@@ -28,7 +29,7 @@ Following is a brief introduction to the variables we studied:
 
 **Congenital Anomalies of the Fetus:**
 
-* Whether the fetus had anencephalus, spina bifida/meningocele, omphalocele/gastroschisis, cleft lip/palate, downs syndrome or not, or not available
+* Whether the fetus had congenital anencephalus, spina bifida/meningocele, omphalocele/gastroschisis, cleft lip/palate, downs syndrome or not, or not available
 
 ## Limitations
 Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations. Most of the variables in the interface *Fetal Deaths, 2005-2019 Request* we used are categorical variables, and there are only two continuous variables--*Year* and *Fetal Death* (or *Percent to Total Death*). The lack of numerical variables brought restrictions to our research. In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.

@@ -4,7 +4,8 @@ dataset-documentation
 limitations
 data-transformation
 missing-values
-fetus-death-dataset-used-for
+fetal-characteristics-dataset
+congenital-anomalies-dataset
 results
 fetal-deaths-over-years
 geographical-distribution

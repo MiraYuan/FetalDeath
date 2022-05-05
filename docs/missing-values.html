@@ -101,7 +101,8 @@
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetus-death-dataset-used-for"><i class="fa fa-check"></i><b>4.1</b> Fetus Death Dataset used for<span></span></a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetal-characteristics-dataset"><i class="fa fa-check"></i><b>4.1</b> Fetal Characteristics Dataset<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#congenital-anomalies-dataset"><i class="fa fa-check"></i><b>4.2</b> Congenital Anomalies Dataset<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
@@ -146,9 +147,16 @@
             <section class="normal" id="section-">
 <div id="missing-values" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Missing values<a href="missing-values.html#missing-values" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="fetus-death-dataset-used-for" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Fetus Death Dataset used for<a href="missing-values.html#fetus-death-dataset-used-for" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p>The variables that do not have the categories of “not available” or “not stated” do not have any missing values. Therefore, we only checked the datasets with variables that have those categories.</p>
+<div id="fetal-characteristics-dataset" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Fetal Characteristics Dataset<a href="missing-values.html#fetal-characteristics-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>As we can see from the graphs, most rows in the dataset we used to study fetal characteristics do not have any missing values, and only a tiny part of the rows miss more than two variables. We can notice that, from most to least, the missed variables are <em>LMP Gestational Age</em>, <em>Infant Delivery Weight</em> and <em>Delivery Method</em>. We think the miss of this data was because of difficulties of documenting, unnecessary of recording, or informality of the delivery places.</p>
+</div>
+<div id="congenital-anomalies-dataset" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Congenital Anomalies Dataset<a href="missing-values.html#congenital-anomalies-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>By checking the missing patterns of the dataset we used to study fetuses’ congenital anomalies, we notice that there are only two situations: complete cases and miss of all congenital anomalies data. Even though more than 25% of rows missed all congenital data, it was because the variables were recorded as “Not stated” and “Not available,” which doubled the number of <em>NA</em> values. Since we focused on each congenital anomaly separately, we do not need to worry too much about the rows that missed all the data.</p>
 
 </div>
 </div>
