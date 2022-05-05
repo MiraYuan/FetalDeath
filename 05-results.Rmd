@@ -125,6 +125,8 @@ ggplot(data = df_plur_new, aes(x = Plurality, y = add)) +
   ggtitle("Distributions of Fetal Deaths in Multiple Birth")
 ```
 
+In this part, we analyze whether the plurality of birth affects the number of fetal death. The above plot is a violin plot. The violin plot effectively shows not only median, range and variability, but also data distribution and its probability density. In the chart above, we can see that the single births have the widest distribution of fetal deaths and the highest number of fetal deaths.
+
 ### Infant Delivery Method
 ```{r}
 # library(parcoords)
@@ -202,18 +204,17 @@ print(g_age)
 ```
 
 ```{r}
-race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
-  filter(Mother.s.Bridged.Race != "Not Reported") %>%
-  group_by(Mother.s.Bridged.Race, Year) %>%
-  summarize(n = n())
+#race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
+#  filter(Mother.s.Bridged.Race != "Not Reported") %>%
+#  group_by(Mother.s.Bridged.Race, Year) %>%
+#  summarize(n = n())
 
-library(ggridges)
-g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
-  geom_density_ridges(aes(n)) +
-  theme_ridges() + 
-  theme(legend.position = "none") +
-  ggtitle("")
-print(g_race)
+#library(ggridges)
+#g_race <- ggplot(race, aes(x = Year, y = Mother.s.Bridged.Race, fill = Mother.s.Bridged.Race)) +
+#  geom_density_ridges(aes(n)) +
+#  theme_ridges() + 
+#  theme(legend.position = "none") +
+#  ggtitle("")
 ```
 
 
