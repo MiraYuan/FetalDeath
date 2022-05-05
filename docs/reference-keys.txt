@@ -15,8 +15,9 @@ plurality-of-birth
 infant-delivery-method
 gestational-age
 maternalpaternal-characteristics
-the-number-of-fetal-deaths-by-different-materanl-race-and-materanl-marital-status
+parents-ages
+materanl-races-and-materanl-marital-status
 interactive-component
-select-congenital-anomalies-of-the-fetus-in-us
-changes-in-the-number-of-fetal-deaths-among-different-maternal-ages-in-different-years
+select-congenital-anomalies-of-fetuses-in-the-us
+changes-in-numbers-of-fetal-deaths-among-different-maternal-ages-in-different-years
 conclusion

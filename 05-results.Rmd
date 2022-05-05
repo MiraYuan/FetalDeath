@@ -7,35 +7,44 @@ library(dplyr)
 library(plotly)
 
 ### Total
-g1 <- fetal %>%
-  dplyr::group_by(Year) %>%
-  dplyr::summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
-  ggplot(aes(x = Year, y = add_p)) +
-  geom_line() +
-  geom_point(alpha = 0.5) +
-  geom_point(aes(x = 2007, y = 7.22), color = "red") +
-  geom_text(aes(label = add_p), nudge_x = 0.4, nudge_y = -0.06, size = 3) +
-  labs(x = "Year", y = "Total Fetal Death Rate",
-       title = "Fetal Death Rate Over Years") +
-  scale_x_continuous(breaks = seq(2005, 2019, 1))
-g1
+# g1 <- fetal %>%
+#   dplyr::group_by(Year) %>%
+#   dplyr::summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
+#   ggplot(aes(x = Year, y = add)) +
+#   geom_line() +
+#   geom_point(alpha = 0.5) +
+#   geom_point(aes(x = 2007, y = 26593), color = "red") +
+#   geom_text(aes(label = add), nudge_x = 0.55, nudge_y = -0.06, size = 3) +
+#   labs(x = "Year", y = "Fetal Death Number",
+#        title = "Fetal Death Over Years") +
+#   scale_x_continuous(breaks = seq(2005, 2019, 1))
+# g1
+
+fetal %>%
+  group_by(Year) %>%
+  summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
+  plot_ly(x = ~Year, y = ~add, type = "scatter", mode = "lines+markers",
+          hoverinfo = "text", text = ~add) %>%
+  layout(title = "Fetal Deaths Over Years",
+         xaxis = list(title = "Year", breaks = seq(2005, 2019, 1)),
+         yaxis = list(title = "Number of Total Death"))
 
 
 g2 <- fetal %>%
   dplyr::group_by(Sex, Year) %>%
   dplyr::summarise(add_g = sum(Fetal.Deaths), add_g_p = sum(Percent.of.Total.Deaths)) %>%
-  ggplot(aes(x = Year, y = add_g_p, col = Sex)) +
+  ggplot(aes(x = Year, y = add_g, col = Sex)) +
   geom_line() +
   geom_point(alpha = 0.5) +
-  labs(x = "Year", y = "Fetal Death Rate",
-       title = "Fetal Death Rate by Different Genders Over Years") +
+  labs(x = "Year", y = "Fetal Death Number",
+       title = "Fetal Death by Different Genders Over Years") +
   scale_x_continuous(breaks = seq(2005, 2019, 1))
 
 start = 2007
 end = 2008
 g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf, 
               fill = "green", alpha = .2) +
-  annotate("text", x = 2008.1, y = 3, label = "2007-2008", 
+  annotate("text", x = 2008.1, y = 12800, label = "2007-2008", 
            color = "black", hjust = 0) +
   theme_classic()
 
@@ -51,17 +60,9 @@ g2 + annotate("rect", xmin = start, xmax = end, ymin = -Inf, ymax = Inf,
 #   scale_x_continuous(breaks = seq(2007, 2019, 1))
 # g3
 
-# fetal %>%
-#   group_by(Year) %>%
-#   summarise(add = sum(Fetal.Deaths), add_p = sum(Percent.of.Total.Deaths)) %>%
-#   plot_ly(x = ~Year, y = ~add, type = "scatter", mode = "lines+markers",
-#           hoverinfo = "text", text = ~add) %>%
-#   layout(title = "Total Fetal Deaths Over Years", 
-#          xaxis = list(title = "Year", breaks = seq(2005, 2019, 1)),
-#          yaxis = list(title = "Number of Total Death"))
 ```
 
-First of all, let us take a look at how the fetal death rates changed between 2005 and 2019. We can clearly see a decreasing trend since 2007. Since we don’t have data before 2007, even though our graphs show there might be an increasing trend before 2007, we cannot simply make a conclusion. After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death rate had a sharper decrease than male data did. We should notice that our graph shows higher death rates for male fetuses. This is not because male fetuses have a higher possibility of death but because male fetuses have higher birth rates in general. This decreasing trend is a good indicator, showing an improvement in national health. It is also unsurprising: with the development of technology and medical skills, we can now detect any potential factors that lead to fetus deaths more efficiently.
+First of all, let us take a look at how the fetal death numbers changed between 2005 and 2019. We can clearly see a decreasing trend since 2007 (hover mouse to the point to see the exact number). After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death numbers had a sharper decrease, but male fetal death numbers had an increase. We should notice that boys' birth rates are always higher than girls' birth rates, and therefore, it is reasonable to see more dead male fetuses than dead female fetuses.
 
 ## Geographical Distribution
 ```{r}
@@ -72,12 +73,13 @@ df_geo <- fetal_2 %>%
   dplyr::group_by(Standard.Residence.States) %>%
   dplyr::summarise(death = sum(Fetal.Deaths), death.p = sum(Percent.of.Total.Deaths)) %>%
   as.data.frame() %>%
-  transmute(region = tolower(`Standard.Residence.States`), value = death.p)
+  transmute(region = tolower(`Standard.Residence.States`), value = death)
 
-state_choropleth(df_geo, title = "Contribution of Fetal Death to Total Death in US",
-                 legend = "Percentage")
+state_choropleth(df_geo, title = "Fetal Death in US",
+                 legend = "Death Number")
 ```
-From the graph above, we can clearly see the contribution of different US states to the total number of US fetal deaths. We found that CA, TX, FL, GA, PA, NY and IL accounted for the largest share of total fetal deaths in the United States. The states with the highest number of fetal deaths are mostly along the coast. However, some northern states (ex. MT, ND, ME, VT...) have very low numbers of fetal deaths.
+
+From the graph above, we can clearly see the distribution of fetal deaths in each US state. We found that CA, TX, FL, GA, PA, NY, and IL accounted for the largest numbers of total fetal deaths in the United States. The states with the highest number of fetal deaths are mostly along the coast. However, some northern states (ex. MT, ND, ME, VT...) have very low numbers of fetal deaths, and we think perhaps this was because of the low birth rates or small populations in these states.
 
 ## Fetal Characteristics
 
@@ -87,19 +89,19 @@ library(forcats)
 fetal_2 %>% 
   na.omit() %>%
   dplyr::group_by(Infant.Delivery.Weight.14) %>%
-  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::summarise(add = sum(Fetal.Deaths)) %>%
   dplyr::arrange(add) %>%
   ggplot2::ggplot(aes(x = add, y = forcats::fct_reorder(Infant.Delivery.Weight.14,add))) +
   ggplot2::geom_point(color = "blue") +
   ggplot2::theme_linedraw() +
-  ggplot2::ylab("Percent") +
-  ggplot2::xlab("Infant Weight") +
-  ggplot2::ggtitle("Percent of Total Deaths for Different Infant Weights")
+  ggplot2::ylab("Infant Weight") +
+  ggplot2::xlab("Death Number") +
+  ggplot2::ggtitle("Fetal Deaths for Different Infant Weights")
 ```
 
-According to the World Health Organization (WHO), the average weight at birth for a full-term baby boy is 3,300 grams (g). The average full-term baby girl weighs 3,200 g, at birth. The average baby born at 37 to 40 weeks weighs between 2,500 to 4,000 grams. Birth weights less than 2,500 grams will be considered low birth weights.
+According to the World Health Organization (WHO), the average weight at birth for a full-term baby boy is 3,300 grams (g). The average full-term baby girl weighs 3,200g at birth. The average baby born at 37 to 40 weeks weighs between 2,500 to 4,000 grams. Birth weights less than 2,500 grams will be considered low birth weights.
 
-From the figure above, we can see that fetuses with a birth weight of 500-999 grams and fetuses with a birth weight of 350-499 grams died the most. The number of deaths of fetuses with birth weights in these two ranges was much higher than for any other birth weight. Not only that, we can also see that the top number of deaths of fetuses were under 2500 grams of birth weight. So we can conclude that underweight fetuses have a higher mortality rate. However, the data shows that the number of fetal deaths outside the average range of fetal weight is low.
+The figure above shows that fetuses with a birth weight of 500-999 grams and fetuses with a birth weight of 350-499 grams died the most. The number of deaths of fetuses with birth weights in these two ranges was much higher than for any other birth weight. Not only that, but we can also see that the top numbers of deaths of fetuses were under 2500 grams of birth weight. So we can conclude that underweight fetuses have a higher mortality rate. However, the data shows that the number of fetal deaths outside the average range of fetal weight is low.
 
 ### Plurality of Birth
 ```{r}
@@ -122,10 +124,12 @@ ggplot(data = df_plur_new, aes(x = Plurality, y = add)) +
   geom_boxplot(width = 0.1) +
   facet_wrap( ~ Plurality, scales = "free") +
   ylab("Number of Fetal Deaths") +
-  ggtitle("Distributions of Fetal Deaths in Multiple Birth")
+  ggtitle("Distributions of Fetal Deaths in Multiple Births")
 ```
 
-In this part, we analyze whether the plurality of birth affects the number of fetal death. The above plot is a violin plot. The violin plot effectively shows not only median, range and variability, but also data distribution and its probability density. In the chart above, we can see that the single births have the widest distribution of fetal deaths and the highest number of fetal deaths.
+In this part, we analyze whether the plurality of birth affects the number of fetal death. The above plot is a violin plot. The violin plot effectively shows not only median, range, and variability, but also data distribution and its probability density. From the chart above, we can see that single births have the widest distribution of fetal deaths and the highest number of fetal deaths. This is not surprising, as in most cases, there is only one infant from a single pregnancy. Just as we expected, we can see the number of dead fetuses decrease with more births in one pregnancy, as fewer pregnancies have multiple births.
+
+By checking the boxplots in the violin plots, we notice that the distributions of all four groups are not normal. It is worth noting that only Triplet has a right-skewed distribution, and single birth has the most left-skewed distribution.
 
 ### Infant Delivery Method
 ```{r}
@@ -165,13 +169,14 @@ mosaicplot(tab_mosaic, direction = c("h","v"),
            xlab = "Delivery Method", ylab = "Plurality", color = 
              c("#DEEBF7","#9ECAE1","#4292C6","#08306B"))
 ```
-We plotted the relationship between different delivery methods, the number of fetuses per birth and the number of fetal deaths. Above is a Mosaic plot. From the graph above, we can clearly see that the number of fetal deaths caused by cesarean is much lower than that caused by vaginal delivery, no matter the fetus is single, twin, triplet or more. Moreover, singletons were the most likely to die, regardless of delivery method.
+
+Based on the number of dead fetuses, we would like to understand the relationship between the different delivery methods and the number of fetuses per birth. Above is a mosaic plot, and we can see an association between the delivery method and the plurality of birth. As we can see, more single births were vaginally delivered, but as the number of birth in a pregnancy increases, cesarean delivery is more likely to opt. 
 
 ### Gestational Age
 ```{r}
 df_bar <- fetal_2 %>%
   dplyr::group_by(LMP.Gestational.Age.10) %>%
-  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  dplyr::summarise(add = sum(Fetal.Deaths)) %>%
   dplyr::arrange(desc(add)) %>%
   na.omit()
 
@@ -179,15 +184,18 @@ ggplot(data = df_bar,aes(x = reorder(LMP.Gestational.Age.10,add), y=add)) +
   geom_bar(stat = "identity",fill = "cornflowerblue") +
   ggtitle("LMP Gestational Age Distribution") +
   xlab("LMP Gestational Age") +
-  ylab("Percent to Total Death") +
+  ylab("Death Number") +
   coord_flip() +
-  theme(panel.grid.major.x = element_blank())
+  theme(panel.grid.major.x = element_blank()) +
+  scale_y_continuous(breaks = seq(0, 58000, 5000))
+max(df_bar$add)
 ```
 
-We believe that another factor determining whether a fetus will survive in good health is the gestational age of the mother. So we plotted the percentage of fetal deaths to the total fetal deaths at different gestational ages. In the bar chart above, we can see that the highest number of fetal deaths occur in gestational aged 20-23 weeks. The odds of surviving fetuses were higher for gestational age over 40 weeks. The data provided by the World Health Organization can also verify our results. According to the data provided by the World Health Organization, we know that delivery within 28 weeks requires modern medical technology, otherwise the survival rate of the fetus is very low or is zero.
+We believe that another factor determining whether a fetus will survive in good health is the mother's gestational age. So we plotted the number of dead fetuses at different gestational ages. In the bar chart above, we can see that the highest number of fetal deaths occurred at the gestational age of 20-23 weeks, and the odds of surviving fetuses were higher for gestational age over 40 weeks. The data provided by the World Health Organization can also verify our results. According to the data provided by the World Health Organization, we know that delivery within 28 weeks requires modern medical technology. Otherwise, the survival rate of the fetus is very low or is zero.
 
 ## Maternal/Paternal Characteristics
 
+### Parents' Ages
 ```{r}
 library(tidyverse)
 library(ggplot2)
@@ -204,8 +212,7 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
 print(g_age)
 ```
 
-We believe that fetal death is also related to the age of the mother and the age of the father. So we plotted the number of fetal deaths caused by different ages of the mother and different ages of the father. We found that when the age of the mother and the age of the father are both between 25 and 29, the number of fetal deaths is the highest. Another age group with a high number of fetal deaths was mothers and fathers both between 30 and 34 years old.
-
+We believe that fetal death is also related to some parental characteristics, for instance, the age of the mother and the age of the father. So we plotted the number of fetal deaths caused by different maternal ages and paternal ages. We found that when the mother's age and the father's age are both between 25 and 29, the number of fetal deaths is the highest. Another age group with a high number of fetal deaths was that both mothers and fathers were between 30 and 34 years old.
 
 ```{r}
 #race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
@@ -221,11 +228,7 @@ We believe that fetal death is also related to the age of the mother and the age
 #  ggtitle("")
 ```
 
-
-
-
-
-### The Number of Fetal Deaths by Different Materanl Race and Materanl Marital Status
+### Materanl Races and Materanl Marital Status
 
 ```{r}
 library(dplyr)
@@ -246,4 +249,4 @@ ggplot(Race_N_Marriage, aes(x = Maternal_Race, y = Fetal.Deaths, color = `Matern
   xlab("Maternal Race")
 ```
 
-In this section, we aim to investigate the effect of the mother's race and the mother's marital status on the number of fetal deaths. We plotted the two independent variables, the mother's race and the mother's marriage. In Cleveland plot above, we can see that first, white mothers had the highest number of fetal deaths, and American Indian or Alaska Native mothers had the lowest number of fetal deaths. For whites and Asians or Pacific Islanders, the number of fetal deaths was higher for married mothers than for unmarried mothers. The other two groups had more deaths when their mothers were unmarried.
+In this section, we aim to investigate the effect of the mother's race and the mother's marital status on the number of fetal deaths. We plotted the two independent variables, the mother's race, and the mother's marriage. In the Cleveland plot above, we can see that white mothers had the highest number of fetal deaths, and American Indian or Alaska Native mothers had the lowest number of fetal deaths. For whites and Asians or Pacific Islanders, the numbers of fetal deaths were higher for married mothers than for unmarried mothers. The other two groups had more deaths when their mothers were unmarried.

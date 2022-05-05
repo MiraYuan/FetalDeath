@@ -1,6 +1,6 @@
 # Missing values
 
-The variables that do not have the categories of "not available" or "not stated" do not have any missing values. Therefore, we only checked the datasets with variables that have those categories.
+Since we are using separate datasets, not every dataset has missing values. Only the datasets contain the variables that have the categories of "not available" or "not stated" have missing values. Some of the variables that contain these two categories have too few factor levels and are not crucial. Therefore, we will not show all missing values visually in this section, and we only choose two datasets that we believe are representative to study their missing patterns in detail. We will have more discussions on why the variables were not available in the **Conclusion** chapter.
 
 ## Fetal Characteristics Dataset
 
@@ -115,7 +115,7 @@ plot_missing <- function(x, percent = TRUE) {
 plot_missing(fetal_2)
 ```
 
-As we can see from the graphs, most rows in the dataset we used to study fetal characteristics do not have any missing values, and only a tiny part of the rows miss more than two variables. We can notice that, from most to least, the missed variables are *LMP Gestational Age*, *Infant Delivery Weight* and *Delivery Method*. We think the miss of this data was because of difficulties of documenting, unnecessary of recording, or informality of the delivery places.
+As we can see from the graphs, most rows in the dataset we used to study fetal characteristics do not have any missing values, and only a tiny part of the rows miss more than two variables. We can notice that, from most to least, the missed variables are *LMP Gestational Age*, *Infant Delivery Weight*, and *Delivery Method*. We think the miss of this data was because of difficulties in documenting, unnecessity of recording, or informality of the delivery places.
 
 ## Congenital Anomalies Dataset
 

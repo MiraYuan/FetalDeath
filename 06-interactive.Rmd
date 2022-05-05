@@ -22,7 +22,7 @@
 ```
 
 
-## Select Congenital Anomalies of The Fetus in US
+## Select Congenital Anomalies of Fetuses in the US
 
 ```{r}
 library(plotly)
@@ -175,7 +175,20 @@ ane_plot %>%
 
 ```
 
-## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
+We believe fetuses' congenital anomalies are also critical features of fetal deaths. Therefore, we considered visualizing if there were any geographical patterns of the dead fetuses who had congenital anomalies. CDC provides statistics for five selected congenital anomalies: Anencephalus, Spina Bifida/Meningocele, Omphalocele/Gastroschisis, Cleft Lip/Palate, and Downs Syndrome. 
+
+In the graph above, we can see how many fetuses died with a particular congenital anomaly in each state in the US by using the drop-down box in the upper-right corner to select the anomaly we are interested in. Because the numbers were small, the percent to total death numbers in each state were even smaller and hard to interpret, we believe using the fetus death number directly is more reasonable. We can see more detailed information by hovering the mouse over a specific state: the state name and the corresponding death number. The legend bar on the right shows the color distribution for a certain anomaly, with darker color indicating the larger number and lighter color indicating the smaller number. The states with a zero death number for a certain anomaly are either did not have any fetuses who died with the anomaly, or the data was not available.
+
+After checking these choropleth maps, we noticed that more dead fetuses have congenital anencephalus and downs syndrome, and congenital spina bifida/meningocele is the anomaly fetuses least likely to have. For each anomaly, there is at least one state has a death number much higher than other states do: 
+
+* North Dakota has the most fetuses died with anencephalus
+* Iowa has the most fetuses died with spina bifida/meningocele 
+* New Hampshire has the most fetuses died with omphalocele/gastroschisis
+* New Mexico has the most fetuses died with cleft lip/palate
+* North Carolina, Arkansas, and Connecticut have the most fetuses died with downs syndrome.
+
+
+## Changes in Numbers of Fetal Deaths Among Different Maternal Ages in Different Years
 ```{r}
 # install.packages("remotes")
 # remotes::install_github("hrbrmstr/streamgraph")
@@ -184,10 +197,23 @@ library(streamgraph)
 
 data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
   summarise(Deaths = sum(Fetal.Deaths))
-g_age_year <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Year") %>%
-  sg_legend(show=TRUE, label="names: ")
+data$Age.of.Mother.9 <- relevel(data$Age.of.Mother.9, "Under 15 years")
+g_age_year <- data %>%
+  streamgraph("Age.of.Mother.9","Deaths", "Year") %>%
+  sg_legend(show=TRUE, label="names: ") %>%
+  sg_axis_x("Year")
 g_age_year
 ```
+
+In order to have a better understanding of how mothers' age would affect fetus death, we construct the above graph to demonstrate how the number of fetal death changed over years for each maternal age group. 
+
+Either use the drop-down box at the bottom, or simply hover the mouse over a specific color fill to choose a specific age we want to focus. The ages are incremental from the bottom to the top, with youngest mothers at the bottom and oldest mothers at the top. By sliding around the mouse in the selected age group (the selected color fill), we can see a detailed report of the death number in each year for this age group in the upper left corner. The x-axis is years and the y-axis is fetal death numbers. By comparing the size of each color fill, we can have a intuitive view of how the numbers of fetal deaths are different from each other, and how they changed over time.
+
+As we can see, most dead fetuses had mothers aged from 20 to 34; over 50 years old or under 15 years old are the two groups containing the smallest number of dead fetuses, as fewer mothers give birth at these ages. From 2005 to 2019, we can see a shrink in the number of dead fetuses. We expect all age groups had such shrink. However, this was not the case. Most of the shrink was contributed by age groups 15-19 and 20-24-year-old mothers. Mothers from other age groups have fluctuated dead fetuses instead of a continuous decrease in the numbers.
+
+
+
+
 
 
 

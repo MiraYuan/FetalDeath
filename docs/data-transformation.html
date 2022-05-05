@@ -109,13 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#maternalpaternal-characteristics"><i class="fa fa-check"></i><b>5.4</b> Maternal/Paternal Characteristics<span></span></a>
 <ul>
-<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#the-number-of-fetal-deaths-by-different-materanl-race-and-materanl-marital-status"><i class="fa fa-check"></i><b>5.4.1</b> The Number of Fetal Deaths by Different Materanl Race and Materanl Marital Status<span></span></a></li>
+<li class="chapter" data-level="5.4.1" data-path="results.html"><a href="results.html#parents-ages"><i class="fa fa-check"></i><b>5.4.1</b> Parents’ Ages<span></span></a></li>
+<li class="chapter" data-level="5.4.2" data-path="results.html"><a href="results.html#materanl-races-and-materanl-marital-status"><i class="fa fa-check"></i><b>5.4.2</b> Materanl Races and Materanl Marital Status<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#select-congenital-anomalies-of-the-fetus-in-us"><i class="fa fa-check"></i><b>6.1</b> Select Congenital Anomalies of The Fetus in US<span></span></a></li>
-<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#changes-in-the-number-of-fetal-deaths-among-different-maternal-ages-in-different-years"><i class="fa fa-check"></i><b>6.2</b> Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years<span></span></a></li>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#select-congenital-anomalies-of-fetuses-in-the-us"><i class="fa fa-check"></i><b>6.1</b> Select Congenital Anomalies of Fetuses in the US<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#changes-in-numbers-of-fetal-deaths-among-different-maternal-ages-in-different-years"><i class="fa fa-check"></i><b>6.2</b> Changes in Numbers of Fetal Deaths Among Different Maternal Ages in Different Years<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
@@ -139,7 +140,7 @@
             <section class="normal" id="section-">
 <div id="data-transformation" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Data transformation<a href="data-transformation.html#data-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Since we chose the features we would like to use when we collected our data, we do not need to do additional work in R to select the variables. What is more, thanks to CDC Wonder, all the data files we collected are already in the tidy version; we do not need to do too much work on transforming the data. CDC Wonder always renders the metadata in a <em>Note</em> column and a <em>codes</em> column for each variable. We believe these pieces of information are unnecessary, so we simply delete them to make our datasets more readable and save environmental space. What else we focused on was to figure out the values should be changed to missing values, for instance, values recorded as <em>unknown</em> or <em>not stated</em>.</p>
+<p>Since we chose the features we would like to use when we collected our data, we do not need to do additional work in R to select the variables. What is more, thanks to CDC Wonder, all the data files we collected were already in the tidy version. CDC Wonder always renders the metadata in a <em>Note</em> column and a <em>codes</em> column for each variable. We believe these pieces of information are unnecessary, so we simply deleted them to make our datasets more readable and save environmental space. What else we focused on was to figure out what values should be changed to missing values, for instance, values recorded as <em>unknown</em> or <em>not stated</em>. Besides, as mentioned before, in the <strong>Limitation</strong> section of our data, we checked any inconsistencies in the statistics and merged them in reasonable ways.</p>
 <center>
 <img src="baby_3.png" />
 </center>
