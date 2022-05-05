@@ -96,6 +96,7 @@
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#limitations"><i class="fa fa-check"></i><b>2.2</b> Limitations<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
@@ -145,9 +146,14 @@
             <section class="normal" id="section-">
 <div id="data-sources" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Data sources<a href="data-sources.html#data-sources" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>All of our datasets were downloaded from the <a href="https://wonder.cdc.gov/controller/datarequest/D133"><strong>CDC Wonder API—Fetal Deaths, 2005-2019 Request</strong></a> (<a href="https://wonder.cdc.gov/controller/datarequest/D133" class="uri">https://wonder.cdc.gov/controller/datarequest/D133</a>). Since CDC Wonder only provides limited numbers of “group by” options, we needed to collect several datasets from the API. We first figuring out the variables we want to focus on and the relationships we want to study, and then downloaded informative datasets from the API.</p>
+<p>All of our datasets were downloaded from the <a href="https://wonder.cdc.gov/controller/datarequest/D133"><strong>CDC Wonder API—Fetal Deaths, 2005-2019 Request</strong></a> (<a href="https://wonder.cdc.gov/controller/datarequest/D133" class="uri">https://wonder.cdc.gov/controller/datarequest/D133</a>). Since CDC Wonder only provides limited numbers of <em>“group by”</em> options, we collected separate datasets to include all the variables we want to study from the API.</p>
 <div id="dataset-documentation" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Dataset Documentation<a href="data-sources.html#dataset-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Following is an brief introduction to the variables we studied:</p>
+</div>
+<div id="limitations" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Limitations<a href="data-sources.html#limitations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations. Most of the variables in the interface <strong>Fetal Deaths, 2005-2019 Request</strong> we used are categorical variables, and there are only two continuous variables–<em>Year</em> and <em>Fetal Death</em> (or <em>Percent to Total Death</em>). The lack of numerical variables brought restrictions to our research. In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.</p>
 
 </div>
 </div>

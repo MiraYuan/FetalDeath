@@ -5,7 +5,6 @@ All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2
 ## Dataset Documentation
 
 Following is an brief introduction to the variables we studied:
-* 
 
 ```{r}
 
