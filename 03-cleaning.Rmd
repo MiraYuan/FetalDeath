@@ -2,6 +2,8 @@
 
 Since we chose the features we would like to use when we collected our data, we do not need to do additional work in R to select the variables. What is more, thanks to CDC Wonder, all the data files we collected were already in the tidy version. CDC Wonder always renders the metadata in a *Note* column and a *codes* column for each variable. We believe these pieces of information are unnecessary, so we simply deleted them to make our datasets more readable and save environmental space. What else we focused on was to figure out what values should be changed to missing values, for instance, values recorded as *unknown* or *not stated*. Besides, as mentioned before, in the **Limitation** section of our data, we checked any inconsistencies in the statistics and merged them in reasonable ways.
 
+For details of how we modified our data, please check the Rmd file [**03-cleaning.Rmd**](https://github.com/MiraYuan/FetalDeath/blob/main/03-cleaning.Rmd) in our GitHub Repository, or copy the following link https://github.com/MiraYuan/FetalDeath/blob/main/03-cleaning.Rmd.
+
 <center>
 ![](baby_3.png)
 </center>

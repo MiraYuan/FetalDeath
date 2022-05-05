@@ -188,7 +188,6 @@ ggplot(data = df_bar,aes(x = reorder(LMP.Gestational.Age.10,add), y=add)) +
   coord_flip() +
   theme(panel.grid.major.x = element_blank()) +
   scale_y_continuous(breaks = seq(0, 58000, 5000))
-max(df_bar$add)
 ```
 
 We believe that another factor determining whether a fetus will survive in good health is the mother's gestational age. So we plotted the number of dead fetuses at different gestational ages. In the bar chart above, we can see that the highest number of fetal deaths occurred at the gestational age of 20-23 weeks, and the odds of surviving fetuses were higher for gestational age over 40 weeks. The data provided by the World Health Organization can also verify our results. According to the data provided by the World Health Organization, we know that delivery within 28 weeks requires modern medical technology. Otherwise, the survival rate of the fetus is very low or is zero.

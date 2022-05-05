@@ -1,6 +1,6 @@
 # Missing values
 
-Since we are using separate datasets, not every dataset has missing values. Only the datasets contain the variables that have the categories of "not available" or "not stated" have missing values. Some of the variables that contain these two categories have too few factor levels and are not crucial. Therefore, we will not show all missing values visually in this section, and we only choose two datasets that we believe are representative to study their missing patterns in detail. We will have more discussions on why the variables were not available in the **Conclusion** chapter.
+Since we are using separate datasets, not every dataset has missing values. Only the datasets contain the variables that have the categories of "not available" or "not stated" have missing values. Some of the variables that contain these two categories have too few factor levels and are not crucial. Therefore, we will not show all missing values visually in this section, and we only choose two datasets that we believe are representative to study their missing patterns in detail. 
 
 ## Fetal Characteristics Dataset
 

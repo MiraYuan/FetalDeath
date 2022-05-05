@@ -200,7 +200,7 @@ data <- fetal %>% group_by(Age.of.Mother.9, Year) %>%
 data$Age.of.Mother.9 <- relevel(data$Age.of.Mother.9, "Under 15 years")
 g_age_year <- data %>%
   streamgraph("Age.of.Mother.9","Deaths", "Year") %>%
-  sg_legend(show=TRUE, label="names: ") %>%
+  sg_legend(show=TRUE, label="Ages: ") %>%
   sg_axis_x("Year")
 g_age_year
 ```
