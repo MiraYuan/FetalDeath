@@ -204,6 +204,9 @@ g_age <- ggplot(parentsAge, aes(x = Age.of.Father, y = Fetal.Deaths)) +
 print(g_age)
 ```
 
+We believe that fetal death is also related to the age of the mother and the age of the father. So we plotted the number of fetal deaths caused by different ages of the mother and different ages of the father. We found that when the age of the mother and the age of the father are both between 25 and 29, the number of fetal deaths is the highest. Another age group with a high number of fetal deaths was mothers and fathers both between 30 and 34 years old.
+
+
 ```{r}
 #race <- fetal %>% dplyr::select(Mother.s.Bridged.Race, Year, Fetal.Deaths) %>%
 #  filter(Mother.s.Bridged.Race != "Not Reported") %>%
@@ -222,7 +225,7 @@ print(g_age)
 
 
 
-### Clevland plot
+### The Number of Fetal Deaths by Different Materanl Race and Materanl Marital Status
 
 ```{r}
 library(dplyr)
@@ -243,3 +246,4 @@ ggplot(Race_N_Marriage, aes(x = Maternal_Race, y = Fetal.Deaths, color = `Matern
   xlab("Maternal Race")
 ```
 
+In this section, we aim to investigate the effect of the mother's race and the mother's marital status on the number of fetal deaths. We plotted the two independent variables, the mother's race and the mother's marriage. In Cleveland plot above, we can see that first, white mothers had the highest number of fetal deaths, and American Indian or Alaska Native mothers had the lowest number of fetal deaths. For whites and Asians or Pacific Islanders, the number of fetal deaths was higher for married mothers than for unmarried mothers. The other two groups had more deaths when their mothers were unmarried.
