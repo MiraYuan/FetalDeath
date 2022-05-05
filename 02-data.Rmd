@@ -37,6 +37,10 @@ Following is a brief introduction to the variables we studied:
 * Whether the fetus had congenital anencephalus, spina bifida/meningocele, omphalocele/gastroschisis, cleft lip/palate, downs syndrome or not, or not available
 
 ## Limitations
-Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations. Most of the variables in the interface *Fetal Deaths, 2005-2019 Request* we used are categorical variables, and there are only two continuous variables--*Year* and *Fetal Death* (or *Percent to Total Death*). The lack of numerical variables brought restrictions to our research. In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.
+Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations.
+
+* Perhaps there was a change in the documentary system, some of the variables do not have consistent recording style. For example, the variable *plurality of birth* has records of quintuplet or higher from 2005-2018, but changed to quadruplet or higher in 2019. 
+* Most of the variables in the interface *Fetal Deaths, 2005-2019 Request* we used are categorical variables, and there are only two continuous variables--*Year* and *Fetal Death* (or *Percent to Total Death*). The lack of numerical variables brought restrictions to our research. 
+* In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.
 
 
