@@ -65,6 +65,7 @@ First of all, let us take a look at how the fetal death rates changed between 20
 
 ## Geographical Distribution
 ```{r}
+#install.packages("rgdal",dependencies = TRUE)
 library(choroplethrMaps)
 library(choroplethr)
 df_geo <- fetal_2 %>%
@@ -76,7 +77,7 @@ df_geo <- fetal_2 %>%
 state_choropleth(df_geo, title = "Contribution of Fetal Death to Total Death in US",
                  legend = "Percentage")
 ```
-install.packages("rgdal",dependencies = TRUE)
+
 
 ## Remarkable Fetal Characteristics
 

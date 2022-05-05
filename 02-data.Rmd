@@ -1,7 +1,17 @@
 # Data sources
 
-All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2005-2019 Request**](https://wonder.cdc.gov/controller/datarequest/D133) (https://wonder.cdc.gov/controller/datarequest/D133). Since CDC Wonder only provides limited numbers of “group by” options, we needed to collect several datasets from the API. We first figuring out the variables we want to focus on and the relationships we want to study, and then downloaded informative datasets from the API.
+All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2005-2019 Request**](https://wonder.cdc.gov/controller/datarequest/D133) (https://wonder.cdc.gov/controller/datarequest/D133). Since CDC Wonder only provides limited numbers of *“group by”* options, we collected separate datasets to include all the variables we want to study from the API. 
 
 ## Dataset Documentation
+
+Following is an brief introduction to the variables we studied:
+* 
+
+```{r}
+
+```
+
+## Limitations
+Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations. Most of the variables in the interface **Fetal Deaths, 2005-2019 Request** we used are categorical variables, and there are only two continuous variables--*Year* and *Fetal Death* (or *Percent to Total Death*). The lack of numerical variables brought restrictions to our research. In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.
 
 

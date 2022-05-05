@@ -1,20 +1,14 @@
 # Data transformation
 
-Since the data files downloaded from CDC Wonder are already in the tidy version, we do not need to do too much work on transforming the data. What we focused on was to figure out what values should be changed to missing values, for instance, values recorded as unknown or not stated.
+Thanks to CDC Wonder, all the data files we collected are already in the tidy version, we do not need to do too much work on transforming the data. What we focused on was to figure out what values should be changed to missing values, for instance, values recorded as unknown or not stated.
 
 ```{r}
 library(tidyr)
 fetal <- read.delim("Fetal Deaths, 2005-2019.txt")
-birth <- read.delim("Natality, 2007-2020.txt")
 fetal <- fetal[,c(-1,-3,-5,-7,-9,-11)]
 fetal <- na.omit(fetal)
-birth <- birth[,c(-1,-3,-5,-7)]
-birth <- na.omit(birth)
 fetal$Age.of.Mother.9 <- as.factor(fetal$Age.of.Mother.9)
 
-birth_s_g <- read.delim("Natality, 2007-2020 (2).txt")
-birth_s_g <- birth_s_g[,c(-1,-3,-5,-7,-9)]
-birth_s_g <- na.omit(birth_s_g)
 fetal_2 <- read.delim("Fetal Deaths, 2005-2019 (1).txt") %>%
   dplyr::select(2,4,6,8,10,12,13)
 fetal_2 <- fetal_2[1:3942,]
@@ -28,16 +22,6 @@ fetal_2 <- fetal_2 %>%
   dplyr::mutate(Plurality.or.Multiple.Birth = 
            ifelse(grepl("Not", Plurality.or.Multiple.Birth, fixed = TRUE),
                    NA_character_, Plurality.or.Multiple.Birth))
-
-birth_state <- read.delim("Natality, 2007-2019 state.txt") %>%
-  dplyr::select(2,4,6)
-birth_state_new <- birth_state[1:663,] %>%
-  dplyr::group_by(State) %>%
-  dplyr::summarise(total_birth = sum(Births))
-
-birth_weight <- read.delim("Natality, 2007-2019 weight.txt") %>%
-  dplyr::select(2,4)
-birth_weight <- birth_weight[1:13,]
 
 fetal_con <- read.delim("Fetal Deaths congential.txt") %>%
   dplyr::select(2,4,6,8,10,12,13)
