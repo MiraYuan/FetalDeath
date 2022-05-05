@@ -50,6 +50,13 @@ fetal_con_downs <- fetal_con_downs %>%
   dplyr::mutate(Downs.Syndrome = ifelse(grepl("Not",Downs.Syndrome, fixed = TRUE), 
                                  NA_character_,Downs.Syndrome)) 
 
+fetal_3 <- read.delim("Fetal Deaths_Y_plu_meth.txt") %>%
+  dplyr::select(2,4,6,8,9)
+fetal_3 <- fetal_3[1:211,]
+fetal_3 <- fetal_3 %>% 
+  dplyr::mutate(Delivery.Method = ifelse(grepl("Not",Delivery.Method, fixed = TRUE), 
+                                 NA_character_,Delivery.Method))
+
 ```
 
 

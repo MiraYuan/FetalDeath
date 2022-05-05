@@ -79,9 +79,9 @@ state_choropleth(df_geo, title = "Contribution of Fetal Death to Total Death in 
 ```
 
 
-## Remarkable Fetal Characteristics
+## Fetal Characteristics
 
-### Does Infant Weights matters?
+### Infant Delivery Weights
 ```{r}
 library(forcats)
 fetal_2 %>% 
@@ -97,46 +97,70 @@ fetal_2 %>%
   ggplot2::ggtitle("Percent of Total Deaths for Different Infant Weights")
 ```
 
-### Relationships between delivery method and plurality of birth
+### Plurality of Birth
 ```{r}
-library(parcoords)
-library(GGally)
-library(ggalluvial)
-df_alluvial <- fetal_2 %>%
-  dplyr::group_by(Delivery.Method, Plurality.or.Multiple.Birth) %>%
-  dplyr::summarise(total = sum(Percent.of.Total.Deaths)) %>%
-  na.omit() 
-ggplot(df_alluvial, aes(axis1 = Delivery.Method, axis2 = Plurality.or.Multiple.Birth, 
-                        y = total)) +
-  geom_alluvium(color = "black" ) +
-  geom_stratum() +
-  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
-  scale_x_discrete(limits = c("Delivery Method","Multiple Birth")) +
-  ylab("Percentage to Total Death") +
-  ggtitle("Flow of change between delivery method and plurality of birth")
+df_plur <- fetal_3 %>%
+  group_by(Year, Plurality.or.Multiple.Birth) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  pivot_wider(names_from = Plurality.or.Multiple.Birth, values_from = add)
+df_plur[is.na(df_plur)] <- 0
+df_plur_new <- df_plur %>%
+  mutate(`Quadruplet or higher` = `Quadruplet `+`Quintuplet or higher`+`Quadruplet or higher`) %>%
+  select(c(-2,-3)) %>%
+  pivot_longer(!Year,names_to = "Plurality", values_to = "Deaths") %>%
+  group_by(Plurality, Year) %>%
+  summarise(add = sum(Deaths))
+df_plur_new$Plurality <- 
+  factor(df_plur_new$Plurality, levels = c("Single", "Twin","Triplet","Quadruplet or higher"))
+
+ggplot(data = df_plur_new, aes(x = Plurality, y = add)) +
+  geom_violin(trim = FALSE) +
+  geom_boxplot(width = 0.1) +
+  facet_wrap( ~ Plurality, scales = "free") +
+  ylab("Number of Fetal Deaths") +
+  ggtitle("Distributions of Fetal Deaths in Multiple Birth")
 ```
 
+### Infant Delivery Method
 ```{r}
-df_mosaic <- fetal_2 %>%
-  dplyr::group_by(Delivery.Method,Plurality.or.Multiple.Birth) %>%
-  dplyr::summarise(add = sum(Percent.of.Total.Deaths)) %>%
+# library(parcoords)
+# library(GGally)
+# library(ggalluvial)
+# df_alluvial <- fetal_2 %>%
+#   dplyr::group_by(Delivery.Method, Plurality.or.Multiple.Birth) %>%
+#   dplyr::summarise(total = sum(Percent.of.Total.Deaths)) %>%
+#   na.omit() 
+# ggplot(df_alluvial, aes(axis1 = Delivery.Method, axis2 = Plurality.or.Multiple.Birth, 
+#                         y = total)) +
+#   geom_alluvium(color = "black" ) +
+#   geom_stratum() +
+#   geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
+#   scale_x_discrete(limits = c("Delivery Method","Multiple Birth")) +
+#   ylab("Percentage to Total Death") +
+#   ggtitle("Flow of change between delivery method and plurality of birth")
+
+df_mosaic <- fetal_3%>%
+  group_by(Year,Plurality.or.Multiple.Birth,Delivery.Method) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  pivot_wider(names_from = Plurality.or.Multiple.Birth, values_from = add) 
+df_mosaic[,3:8][is.na(df_mosaic[,3:8])] <- 0
+
+df_mosaic_new <- df_mosaic %>%
+  mutate(`Quadruplet or higher` = `Quadruplet `+`Quintuplet or higher`+`Quadruplet or higher`) %>%
+  select(c(-3,-4)) %>%
+  pivot_longer(cols = -c(Year, Delivery.Method), names_to = "Pluarity", values_to = "Deaths") %>%
   na.omit()
+df_mosaic_new$Pluarity <- factor(df_mosaic_new$Pluarity, 
+                                 levels = c("Single","Twin","Triplet","Quadruplet or higher"))
 
-df_mosaic$Plurality.or.Multiple.Birth <- factor(df_mosaic$Plurality.or.Multiple.Birth,
-                                             levels = c("Single","Twin","Triplet"))
-  
-
-tab_mosaic <- xtabs(add~.,df_mosaic)
-
-vcd::mosaic(Delivery.Method~Plurality.or.Multiple.Birth, tab_mosaic,
-            direction = c("v","h"), set_labels=list(Plurality.or.Multiple.Birth 
-                                                    = c("1", "2",">3")),
-            gp_labels = grid::gpar(fontsize = 8), highlighting_fill = c("#D1E5F0","#2166AC"),
-            main = "Delivery Method vs. Multiple Birth Number")
-  
+tab_mosaic <- xtabs(Deaths~Delivery.Method + Pluarity,df_mosaic_new)
+mosaicplot(tab_mosaic, direction = c("h","v"),
+           main = "Delivery Method vs. Multiple Birth",las = 1,
+           xlab = "Delivery Method", ylab = "Plurality", color = 
+             c("#DEEBF7","#9ECAE1","#4292C6","#08306B"))
 ```
 
-### LMP weeks
+### Gestational Age
 ```{r}
 df_bar <- fetal_2 %>%
   dplyr::group_by(LMP.Gestational.Age.10) %>%

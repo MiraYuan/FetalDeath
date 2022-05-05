@@ -6,6 +6,11 @@ All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2
 
 Following is a brief introduction to the variables we studied:
 
+**Death:**
+
+* Total numbers fetal deaths
+* Percentage of fetal deaths to total numbers of deaths
+
 **Maternal Residence: **
 
 * State of mother's legal residence at the time of delivery
