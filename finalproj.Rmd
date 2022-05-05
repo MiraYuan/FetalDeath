@@ -21,12 +21,11 @@ browseURL("docs/index.html")
 
 ![](infant.png)
 
-The fetal mortality rate is the measure of poor reproductive health outcomes. It also indicates to some extent a country's medical and health level, economic level and basic implementation level. As the most advanced developed country in the world, the United States is famous for its advanced medical technology and strong economic strength. However, the United States ranks very high in fetal mortality. The fetal mortality rate in the United States is even three times that of some developed countries (such as Japan and Sweden), which shows that fetal mortality is a serious issue that needs to be taken seriously.
+The fetal mortality rate is the measure of poor reproductive health outcomes. It also indicates, to some extent, a country's medical and health level, economic level, and basic implementation level. As the most advanced developed country in the world, the United States is famous for its advanced medical technology and strong economic strength. However, the United States ranks very high in fetal mortality. The fetal mortality rate in the United States is even three times that of some developed countries (such as Japan and Sweden), which shows that fetal mortality is a serious issue that needs to be taken seriously.
 
+We believe that the death of a fetal is not only a sad tragedy for the family but also has a very negative impact on an Aging American society. Therefore, in this project, we aim to explore the causes of fetal death. We will analyze the distribution of fetal mortality in the United States from the perspective of time and space. We will also examine whether specific fetal and parental characteristics contribute to fetal mortality. 
 
-We believe that the death of a fetal is not only a sad tragedy for the family, but also has a very negative impact on an Aging American society. Therefore, in this project, we aim to explore the causes of fetal death. We will analyze the distribution of fetal mortality in the United States from the perspective of time and space. We will also examine whether specific characteristics of parents contribute to fetal mortality.
-
-For more details of our project, please check out our [**GitHub repository**](https://github.com/MiraYuan/FetalDeath) or copy the following link https://github.com/MiraYuan/FetalDeath and paste it in your browser. 
+For more details of our project, please check out our [**GitHub repository**](https://github.com/MiraYuan/FetalDeath) or copy the following link https://github.com/MiraYuan/FetalDeath and paste it into your browser. 
 
 
 <!--chapter:end:index.Rmd-->
@@ -40,9 +39,39 @@ knitr::opts_chunk$set(
 ```
 # Data sources
 
-All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2005-2019 Request**](https://wonder.cdc.gov/controller/datarequest/D133) (https://wonder.cdc.gov/controller/datarequest/D133). Since CDC Wonder only provides limited numbers of “group by” options, we needed to collect several datasets from the API. We first figuring out the variables we want to focus on and the relationships we want to study, and then downloaded informative datasets from the API.
+All of our datasets were downloaded from the [**CDC Wonder API—Fetal Deaths, 2005-2019 Request**](https://wonder.cdc.gov/controller/datarequest/D133) (https://wonder.cdc.gov/controller/datarequest/D133). Since CDC Wonder only provides limited numbers of *“group by”* options, we collected separate datasets to include all the variables we want to study from the API. 
 
 ## Dataset Documentation
+
+Following is a brief introduction to the variables we studied:
+
+**Maternal Residence: **
+
+* State of mother's legal residence at the time of delivery
+
+**Maternal and Parental Characteristics: **
+
+* Mother's Race: American Indian or Alaska Native; Asian or Pacific Islander; Black or African American; White; Not Reported
+* Age of Mother: classified by groups for under 15 years, and 5-year increments for 15 and older
+* Age of Father: classified by groups for under 15 years, and 5-year increments for 15 and older, or not reported
+* Mother's Marital Status: Married; Unmarried; Not Available
+
+**Fetal Characteristics: **
+
+* Year: Year of birth, 2005-2019
+* Sex: Female, Male
+* Delivery Weight: classfied by groups of 249 grams or less; 250 - 349 grams, 350 - 499 grams, 500 gram increments up to 4999 grams; 5000 - 8165 grams; unknown or not stated
+* Plurality or Multiple Birth: Single; twin; triplet; quadruplet; quadruplet or higher; quintuplet or higher
+* LMP Gestational Age: classified by groups for 20 - 23 weeks; 24 - 27 weeks; 28 - 31 weeks; 32 - 35 weeks; 36 weeks; 37-39 weeks; 39 weeks, 40 weeks; 41 weeks; 42 or more weeks; unknown; not available
+* Delivery Method: Vaginal; cesarean; not stated; not reported
+* Vacuum: Use of vacuum during delivery or not, or not available
+
+**Congenital Anomalies of the Fetus:**
+
+* Whether the fetus had congenital anencephalus, spina bifida/meningocele, omphalocele/gastroschisis, cleft lip/palate, downs syndrome or not, or not available
+
+## Limitations
+Even though CDC Wonder can provide reliable and authoritative data, there are still some limitations. Most of the variables in the interface *Fetal Deaths, 2005-2019 Request* we used are categorical variables, and there are only two continuous variables--*Year* and *Fetal Death* (or *Percent to Total Death*). The lack of numerical variables brought restrictions to our research. In addition, not being able to combine different datasets due to a lack of information may also decrease the multidimensionality between variables. However, since we still have various variables in each dataset to work on, this is not a big problem.
 
 
 
@@ -57,21 +86,19 @@ knitr::opts_chunk$set(
 ```
 # Data transformation
 
-Since the data files downloaded from CDC Wonder are already in the tidy version, we do not need to do too much work on transforming the data. What we focused on was to figure out what values should be changed to missing values, for instance, values recorded as unknown or not stated.
+Since we chose the features we would like to use when we collected our data, we do not need to do additional work in R to select the variables. What is more, thanks to CDC Wonder, all the data files we collected are already in the tidy version; we do not need to do too much work on transforming the data. CDC Wonder always renders the metadata in a *Note* column and a *codes* column for each variable. We believe these pieces of information are unnecessary, so we simply delete them to make our datasets more readable and save environmental space. What else we focused on was to figure out the values should be changed to missing values, for instance, values recorded as *unknown* or *not stated*.
+
+<center>
+![](baby_3.png)
+</center>
 
 ```{r}
 library(tidyr)
 fetal <- read.delim("Fetal Deaths, 2005-2019.txt")
-birth <- read.delim("Natality, 2007-2020.txt")
 fetal <- fetal[,c(-1,-3,-5,-7,-9,-11)]
 fetal <- na.omit(fetal)
-birth <- birth[,c(-1,-3,-5,-7)]
-birth <- na.omit(birth)
 fetal$Age.of.Mother.9 <- as.factor(fetal$Age.of.Mother.9)
 
-birth_s_g <- read.delim("Natality, 2007-2020 (2).txt")
-birth_s_g <- birth_s_g[,c(-1,-3,-5,-7,-9)]
-birth_s_g <- na.omit(birth_s_g)
 fetal_2 <- read.delim("Fetal Deaths, 2005-2019 (1).txt") %>%
   dplyr::select(2,4,6,8,10,12,13)
 fetal_2 <- fetal_2[1:3942,]
@@ -85,16 +112,6 @@ fetal_2 <- fetal_2 %>%
   dplyr::mutate(Plurality.or.Multiple.Birth = 
            ifelse(grepl("Not", Plurality.or.Multiple.Birth, fixed = TRUE),
                    NA_character_, Plurality.or.Multiple.Birth))
-
-birth_state <- read.delim("Natality, 2007-2019 state.txt") %>%
-  dplyr::select(2,4,6)
-birth_state_new <- birth_state[1:663,] %>%
-  dplyr::group_by(State) %>%
-  dplyr::summarise(total_birth = sum(Births))
-
-birth_weight <- read.delim("Natality, 2007-2019 weight.txt") %>%
-  dplyr::select(2,4)
-birth_weight <- birth_weight[1:13,]
 
 fetal_con <- read.delim("Fetal Deaths congential.txt") %>%
   dplyr::select(2,4,6,8,10,12,13)
@@ -113,15 +130,11 @@ fetal_con <- fetal_con %>%
                          Cleft.Lip...Palate))
 
 fetal_con_downs <- read.delim("Fetal Deaths congential downs.txt") %>%
-  dplyr::select(2,4,7)
+  dplyr::select(2,4,6,7)
 fetal_con_downs <- fetal_con_downs[1:185,]
 fetal_con_downs <- fetal_con_downs %>%
   dplyr::mutate(Downs.Syndrome = ifelse(grepl("Not",Downs.Syndrome, fixed = TRUE), 
                                  NA_character_,Downs.Syndrome)) 
-
- 
-
-
 
 ```
 
@@ -143,7 +156,9 @@ knitr::opts_chunk$set(
 ```
 # Missing values
 
-## Fetus Death Dataset used for 
+The variables that do not have the categories of "not available" or "not stated" do not have any missing values. Therefore, we only checked the datasets with variables that have those categories.
+
+## Fetal Characteristics Dataset
 
 ```{r}
 library(redav)
@@ -254,14 +269,17 @@ plot_missing <- function(x, percent = TRUE) {
 
 ```{r comment=NA}
 plot_missing(fetal_2)
-# f1 <- sum(is.na(fetal))
-# b1 <- sum(is.na(birth))
-# b2 <- sum(is.na(birth_s_g))
-# df <- data.frame(Dataset = c("Fetal Death", "Natality", "Natality with gender and state"),
-#            "Missing Values" = c(f1, b1, b2))
-# knitr::kable(df)
+```
+
+As we can see from the graphs, most rows in the dataset we used to study fetal characteristics do not have any missing values, and only a tiny part of the rows miss more than two variables. We can notice that, from most to least, the missed variables are *LMP Gestational Age*, *Infant Delivery Weight* and *Delivery Method*. We think the miss of this data was because of difficulties of documenting, unnecessary of recording, or informality of the delivery places.
+
+## Congenital Anomalies Dataset
+
+```{r}
 plot_missing(fetal_con)
 ```
+
+By checking the missing patterns of the dataset we used to study fetuses' congenital anomalies, we notice that there are only two situations: complete cases and miss of all congenital anomalies data. Even though more than 25% of rows missed all congenital data, it was because the variables were recorded as "Not stated" and "Not available," which doubled the number of *NA* values. Since we focused on each congenital anomaly separately, we do not need to worry too much about the rows that missed all the data.
 
 
 <!--chapter:end:04-missing.Rmd-->
@@ -340,6 +358,7 @@ First of all, let us take a look at how the fetal death rates changed between 20
 
 ## Geographical Distribution
 ```{r}
+#install.packages("rgdal",dependencies = TRUE)
 library(choroplethrMaps)
 library(choroplethr)
 df_geo <- fetal_2 %>%
@@ -351,7 +370,7 @@ df_geo <- fetal_2 %>%
 state_choropleth(df_geo, title = "Contribution of Fetal Death to Total Death in US",
                  legend = "Percentage")
 ```
-install.packages("rgdal",dependencies = TRUE)
+
 
 ## Remarkable Fetal Characteristics
 
@@ -499,39 +518,6 @@ knitr::opts_chunk$set(
 ```
 # Interactive component
 
-```{r}
-library(plotly)
-fetal_con_downs_new <- fetal_con_downs %>%
-  group_by(Standard.Residence.States,Downs.Syndrome) %>%
-  summarise(add = sum(Percent.of.Total.Deaths)) %>%
-  filter(Downs.Syndrome=="Yes") %>%
-  rename(State =Standard.Residence.States) %>%
-  select(1,3)
-
-not_include <- state.name[state.name %in% fetal_con_downs_new$State == FALSE]
-bind <- data.frame(State =not_include,
-                   add = rep(NA, length(not_include)))
-fetal_con_downs_new <- rbind(fetal_con_downs_new, bind)
-
-#pivot_wider(names_from = Downs.Syndrome, values_from = Percent.of.Total.Deaths)
-
-## Trace only USA
-g <- list(
-  scope = 'usa',
-  projection = list(type = 'albers usa'),
-  lakecolor = toRGB('white')
-)
-
-percent <- fetal_con_downs_new$add
-  
-plot_geo() %>%
-  add_trace(
-    z = ~percent, text = state.name, span = I(1),
-    locations = state.abb, locationmode = 'USA-states', colors = "Blues"
-  ) %>%
-  layout(geo = g)
-```
-
 ## The Total Amount of Fetal Death from 2005 to 2019
 
 ```{r}
@@ -555,11 +541,165 @@ g_by_year
 ```
 
 
+## Select Congenital Anomalies of The Fetus in US
+
+```{r}
+library(plotly)
+#library(shiny)
+###Downs
+fetal_con_downs_new <- fetal_con_downs %>%
+  group_by(Standard.Residence.States,Downs.Syndrome) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Downs.Syndrome=="Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include <- state.name[state.name %in% fetal_con_downs_new$State == FALSE]
+bind <- data.frame(State =not_include,
+                   add = rep(0, length(not_include)))
+fetal_con_downs_new <- rbind(fetal_con_downs_new, bind)
+
+## Trace only USA
+g <- list(
+  scope = 'usa',
+  projection = list(type = 'albers usa'),
+  lakecolor = toRGB('white')
+)
+
+percent <- fetal_con_downs_new$add
+# downs_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Downs Syndrome in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#downs_plot
+
+###Anencephalus
+m <- list(
+  l = 50,
+  r = 50,
+  b = 100,
+  t = 100,
+  pad = 4
+)
+
+fetal_con_ane <- fetal_con %>%
+  group_by(Standard.Residence.States,Anencephalus) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Anencephalus == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_ane <- state.name[state.name %in% fetal_con_ane$State == FALSE]
+bind_ane <- data.frame(State =not_include_ane,
+                   add = rep(0, length(not_include_ane)))
+fetal_con_ane <- rbind(fetal_con_ane, bind_ane)
+
+percent_ane <- fetal_con_ane$add
+ane_plot <- plot_geo() %>%
+  add_trace(
+    z = ~percent_ane, text = state.name, span = I(1),
+    locations = state.abb, locationmode = 'USA-states', colors = "Blues") %>%
+  layout(geo = g, title = "Fetuses Died With Congential Anencephalus in US") %>%
+  colorbar(title = paste("Fetal Death","<br>Number"))
+#ane_plot
+
+###Spina
+fetal_con_spi <- fetal_con %>%
+  group_by(Standard.Residence.States,Spina.Bifida...Meningocele) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Spina.Bifida...Meningocele == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_spi <- state.name[state.name %in% fetal_con_spi$State == FALSE]
+bind_spi <- data.frame(State =not_include_spi,
+                   add = rep(0, length(not_include_spi)))
+fetal_con_spi <- rbind(fetal_con_spi, bind_spi)
+
+percent_spi <- fetal_con_spi$add
+# spi_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_spi, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Spina Bifida or Meningocele in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#spi_plot
+
+###Omphalocele
+fetal_con_omp <- fetal_con %>%
+  group_by(Standard.Residence.States,Omphalocele...Gastroschisis) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Omphalocele...Gastroschisis == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_omp <- state.name[state.name %in% fetal_con_omp$State == FALSE]
+bind_omp <- data.frame(State =not_include_omp,
+                   add = rep(0, length(not_include_omp)))
+fetal_con_omp <- rbind(fetal_con_omp, bind_omp)
+
+percent_omp <- fetal_con_omp$add
+# omp_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_omp, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Omphalocele or Gastroschisis in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#omp_plot
+
+###Cleft lip
+fetal_con_clf <- fetal_con %>%
+  group_by(Standard.Residence.States,Cleft.Lip...Palate) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Cleft.Lip...Palate == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_clf <- state.name[state.name %in% fetal_con_clf$State == FALSE]
+bind_clf <- data.frame(State =not_include_clf,
+                   add = rep(0, length(not_include_clf)))
+fetal_con_clf <- rbind(fetal_con_clf, bind_clf)
+
+percent_clf <- fetal_con_clf$add
+# clf_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_clf, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Cleft Lip or Palate in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#clf_plot
+
+ane_plot %>%
+  layout(title = "Distribution of Selected Congenital Anomalies in US",
+  xaxis = list(domain = c(0.1, 1)),
+  yaxis = list(title = "y"),
+  updatemenus = list(
+    list(
+      y = 1,x=1,
+      buttons = list(
+        list(method = "restyle", args = list("z", list(percent_ane)),
+             label = "Anencephalus"),
+        list(method = "restyle", args = list("z", list(percent_spi)),
+             label = paste("Spina Bifida/" , "<br>Meningocele")),
+        list(method = "restyle", args = list("z", list(percent_omp)),
+             label = paste("Omphalocele/","<br>Gastroschisis")),
+        list(method = "restyle", args = list("z", list(percent_clf)),
+             label = paste("Cleft Lip/","<br>Palate")),
+        list(method = "restyle", args = list("z", list(percent)),
+             label = paste("Downs","<br>Syndrome"))
+      )
+    )
+  ))
+
+```
 
 ## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
 ```{r}
+# install.packages("remotes")
+# remotes::install_github("hrbrmstr/streamgraph")
 library(streamgraph)
-library(tidyverse)
+#library(tidyverse)
 
 data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
   summarise(Deaths = sum(Fetal.Deaths))
@@ -567,6 +707,10 @@ g_age_year <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Yea
   sg_legend(show=TRUE, label="names: ")
 g_age_year
 ```
+
+
+
+
 
 
 <!--chapter:end:06-interactive.Rmd-->
