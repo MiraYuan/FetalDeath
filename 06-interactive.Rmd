@@ -22,22 +22,23 @@ g_by_year <- dygraph(fetal_by_year) %>%
 g_by_year
 ```
 
-## Percentage of Fetal Deaths by State
+
+## Select Congenital Anomalies of The Fetus in US
+
 ```{r}
 library(plotly)
+#library(shiny)
+###Downs
 fetal_con_downs_new <- fetal_con_downs %>%
   group_by(Standard.Residence.States,Downs.Syndrome) %>%
-  summarise(add = sum(Percent.of.Total.Deaths)) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
   filter(Downs.Syndrome=="Yes") %>%
   rename(State =Standard.Residence.States) %>%
   select(1,3)
-
 not_include <- state.name[state.name %in% fetal_con_downs_new$State == FALSE]
 bind <- data.frame(State =not_include,
-                   add = rep(NA, length(not_include)))
+                   add = rep(0, length(not_include)))
 fetal_con_downs_new <- rbind(fetal_con_downs_new, bind)
-
-#pivot_wider(names_from = Downs.Syndrome, values_from = Percent.of.Total.Deaths)
 
 ## Trace only USA
 g <- list(
@@ -47,21 +48,140 @@ g <- list(
 )
 
 percent <- fetal_con_downs_new$add
-  
-plot_geo() %>%
+# downs_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Downs Syndrome in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#downs_plot
+
+###Anencephalus
+m <- list(
+  l = 50,
+  r = 50,
+  b = 100,
+  t = 100,
+  pad = 4
+)
+
+fetal_con_ane <- fetal_con %>%
+  group_by(Standard.Residence.States,Anencephalus) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Anencephalus == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_ane <- state.name[state.name %in% fetal_con_ane$State == FALSE]
+bind_ane <- data.frame(State =not_include_ane,
+                   add = rep(0, length(not_include_ane)))
+fetal_con_ane <- rbind(fetal_con_ane, bind_ane)
+
+percent_ane <- fetal_con_ane$add
+ane_plot <- plot_geo() %>%
   add_trace(
-    z = ~percent, text = state.name, span = I(1),
-    locations = state.abb, locationmode = 'USA-states', colors = "Blues"
-  ) %>%
-  layout(geo = g)
+    z = ~percent_ane, text = state.name, span = I(1),
+    locations = state.abb, locationmode = 'USA-states', colors = "Blues") %>%
+  layout(geo = g, title = "Fetuses Died With Congential Anencephalus in US") %>%
+  colorbar(title = paste("Fetal Death","<br>Number"))
+#ane_plot
+
+###Spina
+fetal_con_spi <- fetal_con %>%
+  group_by(Standard.Residence.States,Spina.Bifida...Meningocele) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Spina.Bifida...Meningocele == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_spi <- state.name[state.name %in% fetal_con_spi$State == FALSE]
+bind_spi <- data.frame(State =not_include_spi,
+                   add = rep(0, length(not_include_spi)))
+fetal_con_spi <- rbind(fetal_con_spi, bind_spi)
+
+percent_spi <- fetal_con_spi$add
+# spi_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_spi, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Spina Bifida or Meningocele in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#spi_plot
+
+###Omphalocele
+fetal_con_omp <- fetal_con %>%
+  group_by(Standard.Residence.States,Omphalocele...Gastroschisis) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Omphalocele...Gastroschisis == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_omp <- state.name[state.name %in% fetal_con_omp$State == FALSE]
+bind_omp <- data.frame(State =not_include_omp,
+                   add = rep(0, length(not_include_omp)))
+fetal_con_omp <- rbind(fetal_con_omp, bind_omp)
+
+percent_omp <- fetal_con_omp$add
+# omp_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_omp, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Omphalocele or Gastroschisis in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#omp_plot
+
+###Cleft lip
+fetal_con_clf <- fetal_con %>%
+  group_by(Standard.Residence.States,Cleft.Lip...Palate) %>%
+  summarise(add = sum(Fetal.Deaths)) %>%
+  filter(Cleft.Lip...Palate == "Yes") %>%
+  rename(State =Standard.Residence.States) %>%
+  select(1,3)
+not_include_clf <- state.name[state.name %in% fetal_con_clf$State == FALSE]
+bind_clf <- data.frame(State =not_include_clf,
+                   add = rep(0, length(not_include_clf)))
+fetal_con_clf <- rbind(fetal_con_clf, bind_clf)
+
+percent_clf <- fetal_con_clf$add
+# clf_plot <- plot_geo() %>%
+#   add_trace(
+#     z = ~percent_clf, text = state.name, span = I(1),
+#     locations = state.abb, locationmode = 'USA-states', colors = "Blues"
+#   ) %>%
+#   layout(geo = g, title = "Fetuses Died With Congential Cleft Lip or Palate in US") %>%
+#   colorbar(title = "Fetal Death Number")
+#clf_plot
+
+ane_plot %>%
+  layout(title = "Distribution of Selected Congenital Anomalies in US",
+  xaxis = list(domain = c(0.1, 1)),
+  yaxis = list(title = "y"),
+  updatemenus = list(
+    list(
+      y = 1,x=1,
+      buttons = list(
+        list(method = "restyle", args = list("z", list(percent_ane)),
+             label = "Anencephalus"),
+        list(method = "restyle", args = list("z", list(percent_spi)),
+             label = paste("Spina Bifida/" , "<br>Meningocele")),
+        list(method = "restyle", args = list("z", list(percent_omp)),
+             label = paste("Omphalocele/","<br>Gastroschisis")),
+        list(method = "restyle", args = list("z", list(percent_clf)),
+             label = paste("Cleft Lip/","<br>Palate")),
+        list(method = "restyle", args = list("z", list(percent)),
+             label = paste("Downs","<br>Syndrome"))
+      )
+    )
+  ))
+
 ```
-
-
 
 ## Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years
 ```{r}
+# install.packages("remotes")
+# remotes::install_github("hrbrmstr/streamgraph")
 library(streamgraph)
-library(tidyverse)
+#library(tidyverse)
 
 data <- fetal %>% group_by(Age.of.Mother.9, Year) %>% 
   summarise(Deaths = sum(Fetal.Deaths))
@@ -69,4 +189,8 @@ g_age_year <- streamgraph(data, key="Age.of.Mother.9", value="Deaths", date="Yea
   sg_legend(show=TRUE, label="names: ")
 g_age_year
 ```
+
+
+
+
 

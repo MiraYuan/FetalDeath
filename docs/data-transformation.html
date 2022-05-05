@@ -53,12 +53,6 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
 <link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
 <script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
 <script src="libs/dygraphs-1.1.1/shapes.js"></script>
@@ -67,6 +61,17 @@
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
 <script src="libs/Dygraph.Plugins.Crosshair-1.0/crosshair.js"></script>
+<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<script src="libs/d3-3.5.3/d3.min.js"></script>
+<link href="libs/colorbrewer-1/colorbrewer.css" rel="stylesheet" />
+<script src="libs/colorbrewer-1/colorbrewer.js"></script>
+<link href="libs/streamgraph-1/streamgraph.css" rel="stylesheet" />
+<script src="libs/streamgraph-binding-0.9.0/streamgraph.js"></script>
 
 
 
@@ -91,11 +96,13 @@
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#limitations"><i class="fa fa-check"></i><b>2.2</b> Limitations<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetus-death-dataset-used-for"><i class="fa fa-check"></i><b>4.1</b> Fetus Death Dataset used for<span></span></a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetal-characteristics-dataset"><i class="fa fa-check"></i><b>4.1</b> Fetal Characteristics Dataset<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#congenital-anomalies-dataset"><i class="fa fa-check"></i><b>4.2</b> Congenital Anomalies Dataset<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
@@ -115,6 +122,8 @@
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#the-total-amount-of-fetal-death-from-2005-to-2019"><i class="fa fa-check"></i><b>6.1</b> The Total Amount of Fetal Death from 2005 to 2019<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#select-congenital-anomalies-of-the-fetus-in-us"><i class="fa fa-check"></i><b>6.2</b> Select Congenital Anomalies of The Fetus in US<span></span></a></li>
+<li class="chapter" data-level="6.3" data-path="interactive-component.html"><a href="interactive-component.html#changes-in-the-number-of-fetal-deaths-among-different-maternal-ages-in-different-years"><i class="fa fa-check"></i><b>6.3</b> Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
@@ -138,7 +147,10 @@
             <section class="normal" id="section-">
 <div id="data-transformation" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Data transformation<a href="data-transformation.html#data-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Since the data files downloaded from CDC Wonder are already in the tidy version, we do not need to do too much work on transforming the data. What we focused on was to figure out what values should be changed to missing values, for instance, values recorded as unknown or not stated.</p>
+<p>Since we chose the features we would like to use when we collected our data, we do not need to do additional work in R to select the variables. What is more, thanks to CDC Wonder, all the data files we collected are already in the tidy version; we do not need to do too much work on transforming the data. CDC Wonder always renders the metadata in a <em>Note</em> column and a <em>codes</em> column for each variable. We believe these pieces of information are unnecessary, so we simply delete them to make our datasets more readable and save environmental space. What else we focused on was to figure out the values should be changed to missing values, for instance, values recorded as <em>unknown</em> or <em>not stated</em>.</p>
+<center>
+<img src="baby_3.png" />
+</center>
 
 </div>
             </section>

@@ -53,12 +53,6 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
 <link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
 <script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
 <script src="libs/dygraphs-1.1.1/shapes.js"></script>
@@ -67,6 +61,17 @@
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
 <script src="libs/Dygraph.Plugins.Crosshair-1.0/crosshair.js"></script>
+<script src="libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<script src="libs/d3-3.5.3/d3.min.js"></script>
+<link href="libs/colorbrewer-1/colorbrewer.css" rel="stylesheet" />
+<script src="libs/colorbrewer-1/colorbrewer.js"></script>
+<link href="libs/streamgraph-1/streamgraph.css" rel="stylesheet" />
+<script src="libs/streamgraph-binding-0.9.0/streamgraph.js"></script>
 
 
 
@@ -91,11 +96,13 @@
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#dataset-documentation"><i class="fa fa-check"></i><b>2.1</b> Dataset Documentation<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#limitations"><i class="fa fa-check"></i><b>2.2</b> Limitations<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetus-death-dataset-used-for"><i class="fa fa-check"></i><b>4.1</b> Fetus Death Dataset used for<span></span></a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#fetal-characteristics-dataset"><i class="fa fa-check"></i><b>4.1</b> Fetal Characteristics Dataset<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#congenital-anomalies-dataset"><i class="fa fa-check"></i><b>4.2</b> Congenital Anomalies Dataset<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
@@ -115,6 +122,8 @@
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#the-total-amount-of-fetal-death-from-2005-to-2019"><i class="fa fa-check"></i><b>6.1</b> The Total Amount of Fetal Death from 2005 to 2019<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#select-congenital-anomalies-of-the-fetus-in-us"><i class="fa fa-check"></i><b>6.2</b> Select Congenital Anomalies of The Fetus in US<span></span></a></li>
+<li class="chapter" data-level="6.3" data-path="interactive-component.html"><a href="interactive-component.html#changes-in-the-number-of-fetal-deaths-among-different-maternal-ages-in-different-years"><i class="fa fa-check"></i><b>6.3</b> Changes in the Number of Fetal Deaths Among Different Maternal Ages in Different Years<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
@@ -140,36 +149,36 @@
 <h1><span class="header-section-number">Chapter 5</span> Results<a href="results.html#results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="fetal-deaths-over-years" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Fetal Deaths Over Years<a href="results.html#fetal-deaths-over-years" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-10-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
 <p>First of all, let us take a look at how the fetal death rates changed between 2005 and 2019. We can clearly see a decreasing trend since 2007. Since we don’t have data before 2007, even though our graphs show there might be an increasing trend before 2007, we cannot simply make a conclusion. After further checking the movement by splitting the data into different genders, we found out that from 2007 to 2008, the female fetal death rate had a sharper decrease than male data did. We should notice that our graph shows higher death rates for male fetuses. This is not because male fetuses have a higher possibility of death but because male fetuses have higher birth rates in general. This decreasing trend is a good indicator, showing an improvement in national health. It is also unsurprising: with the development of technology and medical skills, we can now detect any potential factors that lead to fetus deaths more efficiently.</p>
 </div>
 <div id="geographical-distribution" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Geographical Distribution<a href="results.html#geographical-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 </div>
 <div id="remarkable-fetal-characteristics" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Remarkable Fetal Characteristics<a href="results.html#remarkable-fetal-characteristics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="does-infant-weights-matters" class="section level3 hasAnchor" number="5.3.1">
 <h3><span class="header-section-number">5.3.1</span> Does Infant Weights matters?<a href="results.html#does-infant-weights-matters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 </div>
 <div id="relationships-between-delivery-method-and-plurality-of-birth" class="section level3 hasAnchor" number="5.3.2">
 <h3><span class="header-section-number">5.3.2</span> Relationships between delivery method and plurality of birth<a href="results.html#relationships-between-delivery-method-and-plurality-of-birth" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 </div>
 <div id="lmp-weeks" class="section level3 hasAnchor" number="5.3.3">
 <h3><span class="header-section-number">5.3.3</span> LMP weeks<a href="results.html#lmp-weeks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 </div>
 </div>
 <div id="maternalpaternal-characteristics" class="section level2 hasAnchor" number="5.4">
 <h2><span class="header-section-number">5.4</span> Maternal/Paternal Characteristics<a href="results.html#maternalpaternal-characteristics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <div id="clevland-plot" class="section level3 hasAnchor" number="5.4.1">
 <h3><span class="header-section-number">5.4.1</span> Clevland plot<a href="results.html#clevland-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 
 </div>
 </div>
